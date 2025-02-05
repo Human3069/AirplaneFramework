@@ -1,0 +1,1055 @@
+fileFormatVersion: 2
+guid: a15289748fb5a1b4bbc5ab25c78c8f6c
+timeCreated: 1515617586
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: soldier_Barrel-nub_bone
+    100004: soldier_Barrel_bone
+    100006: soldier_Belt_mesh
+    100008: soldier_Body_mesh
+    100010: soldier_Butt-nub_bone
+    100012: soldier_Butt_bone
+    100014: soldier_COM_ctrl
+    100016: soldier_Hair_1_bone
+    100018: soldier_Hair_1_ctrl
+    100020: soldier_Hair_2_bone
+    100022: soldier_Hair_2_ctrl
+    100024: soldier_Hair_3_bone
+    100026: soldier_Hair_3_ctrl
+    100028: soldier_Hair_4-nub_bone
+    100030: soldier_Hair_4_bone
+    100032: soldier_Hair_4_ctrl
+    100034: soldier_Hair_mesh
+    100036: soldier_Hat_mesh
+    100038: soldier_Head-nub_bone
+    100040: soldier_Head_bone
+    100042: soldier_Head_ctrl
+    100044: soldier_Hip_ctrl
+    100046: soldier_Jacket_mesh
+    100048: soldier_Jaw-nub_bone
+    100050: soldier_Jaw_bone
+    100052: soldier_Jaw_ctrl
+    100054: soldier_l_Ankle_bone
+    100056: soldier_l_ball_IKGoal
+    100058: soldier_l_Cheek-nub_bone
+    100060: soldier_l_Cheek_bone
+    100062: soldier_l_Cheek_ctrl
+    100064: soldier_l_Clav_bone
+    100066: soldier_l_Clavicle_ctrl
+    100068: soldier_l_Elbow_FK_ctrl
+    100070: soldier_l_Eye-nub_bone
+    100072: soldier_l_Eye_bone
+    100074: soldier_l_Eye_ctrl
+    100076: soldier_l_Eyebrow-nub_bone
+    100078: soldier_l_Eyebrow_bone
+    100080: soldier_l_Eyebrow_ctrl
+    100082: soldier_l_EyelidLower-nub_bone
+    100084: soldier_l_EyelidLower_bone
+    100086: soldier_l_EyelidLower_ctrl
+    100088: soldier_l_EyelidUpper-nub_bone
+    100090: soldier_l_EyelidUpper_bone
+    100092: soldier_l_EyelidUpper_ctrl
+    100094: soldier_l_Foot_ctrl
+    100096: soldier_l_Forearm_bone
+    100098: soldier_l_Forearm_FK_bone
+    100100: soldier_l_Forearm_IK_bone
+    100102: soldier_l_ForearmRoll1_bone
+    100104: soldier_l_ForearmRoll2_bone
+    100106: soldier_l_Hand-nub_bone
+    100108: soldier_l_Hand_bone
+    100110: soldier_l_Hand_FK_ctrl
+    100112: soldier_l_Hand_IK_ctrl
+    100114: soldier_l_Hand_IKGoal
+    100116: soldier_l_Heel_hlp
+    100118: soldier_l_heel_IKGoal
+    100120: soldier_l_HeelPeel_hlp
+    100122: soldier_l_Index_1_bone
+    100124: soldier_l_Index_2_bone
+    100126: soldier_l_Index_3-nub_bone
+    100128: soldier_l_Index_3_bone
+    100130: soldier_l_Index_ctrl
+    100132: soldier_l_Jacket_1_bone
+    100134: soldier_l_Jacket_1_ctrl
+    100136: soldier_l_Jacket_2_bone
+    100138: soldier_l_Jacket_2_ctrl
+    100140: soldier_l_Jacket_3-nub_bone
+    100142: soldier_l_Jacket_3_bone
+    100144: soldier_l_Jacket_3_ctrl
+    100146: soldier_l_Knee_bone
+    100148: soldier_l_Middle_1_bone
+    100150: soldier_l_Middle_2_bone
+    100152: soldier_l_Middle_3-nub_bone
+    100154: soldier_l_Middle_3_bone
+    100156: soldier_l_Middle_ctrl
+    100158: soldier_l_Mouth-nub_bone
+    100160: soldier_l_Mouth_bone
+    100162: soldier_l_Mouth_ctrl
+    100164: soldier_l_Pinky_1_bone
+    100166: soldier_l_Pinky_2_bone
+    100168: soldier_l_Pinky_3-nub_bone
+    100170: soldier_l_Pinky_3_bone
+    100172: soldier_l_Pinky_ctrl
+    100174: soldier_l_Ring_1_bone
+    100176: soldier_l_Ring_2_bone
+    100178: soldier_l_Ring_3-nub_bone
+    100180: soldier_l_Ring_3_bone
+    100182: soldier_l_Ring_ctrl
+    100184: soldier_l_Shoulder_bone
+    100186: soldier_l_Shoulder_FK_bone
+    100188: soldier_l_Shoulder_FK_ctrl
+    100190: soldier_l_Shoulder_IK_bone
+    100192: soldier_l_ShoulderRoll_bone
+    100194: soldier_l_ShoulderTwist_hlp
+    100196: soldier_l_Thigh_bone
+    100198: soldier_l_Thumb_1_bone
+    100200: soldier_l_Thumb_2_bone
+    100202: soldier_l_Thumb_3-nub_bone
+    100204: soldier_l_Thumb_3_bone
+    100206: soldier_l_Thumb_ctrl
+    100208: soldier_l_Toe-nub_bone
+    100210: soldier_l_Toe_bone
+    100212: soldier_l_toe_IKGoal
+    100214: soldier_l_ToeLift_hlp
+    100216: soldier_l_ToeTap_hlp
+    100218: soldier_l_Wrist_bone
+    100220: soldier_l_Wrist_FK_bone
+    100222: soldier_l_Wrist_IK_bone
+    100224: soldier_Lock-nub_bone
+    100226: soldier_Lock_bone
+    100228: soldier_Lock_ctrl
+    100230: soldier_Main_ctrl
+    100232: soldier_Mandible_bone
+    100234: soldier_Mandible_ctrl
+    100236: soldier_Maxilla-nub_bone
+    100238: soldier_Maxilla_bone
+    100240: soldier_Maxilla_ctrl
+    100242: soldier_Musket_ctrl
+    100244: soldier_Musket_mesh
+    100246: soldier_Neck_bone
+    100248: soldier_NeckBase_ctrl
+    100250: soldier_Pelvis-nub_bone
+    100252: soldier_Pelvis_bone
+    100254: soldier_r_Ankle_bone
+    100256: soldier_r_ball_IKGoal
+    100258: soldier_r_Cheek-nub_bone
+    100260: soldier_r_Cheek_bone
+    100262: soldier_r_Cheek_ctrl
+    100264: soldier_r_Clav_bone
+    100266: soldier_r_Clavicle_ctrl
+    100268: soldier_r_Elbow_FK_ctrl
+    100270: soldier_r_Eye-nub_bone
+    100272: soldier_r_Eye_bone
+    100274: soldier_r_Eye_ctrl
+    100276: soldier_r_Eyebrow-nub_bone
+    100278: soldier_r_Eyebrow_bone
+    100280: soldier_r_Eyebrow_ctrl
+    100282: soldier_r_EyelidLower-nub_bone
+    100284: soldier_r_EyelidLower_bone
+    100286: soldier_r_EyelidLower_ctrl
+    100288: soldier_r_EyelidUpper-nub_bone
+    100290: soldier_r_EyelidUpper_bone
+    100292: soldier_r_EyelidUpper_ctrl
+    100294: soldier_r_Foot_ctrl
+    100296: soldier_r_Forearm_bone
+    100298: soldier_r_Forearm_FK_bone
+    100300: soldier_r_Forearm_IK_bone
+    100302: soldier_r_ForearmRoll1_bone
+    100304: soldier_r_ForearmRoll2_bone
+    100306: soldier_r_Hand-nub_bone
+    100308: soldier_r_Hand_bone
+    100310: soldier_r_Hand_FK_ctrl
+    100312: soldier_r_Hand_IK_ctrl
+    100314: soldier_r_Hand_IKGoal
+    100316: soldier_r_Heel_hlp
+    100318: soldier_r_heel_IKGoal
+    100320: soldier_r_HeelPeel_hlp
+    100322: soldier_r_Index_1_bone
+    100324: soldier_r_Index_2_bone
+    100326: soldier_r_Index_3-nub_bone
+    100328: soldier_r_Index_3_bone
+    100330: soldier_r_Index_ctrl
+    100332: soldier_r_Jacket_1_bone
+    100334: soldier_r_Jacket_1_ctrl
+    100336: soldier_r_Jacket_2_bone
+    100338: soldier_r_Jacket_2_ctrl
+    100340: soldier_r_Jacket_3-nub_bone
+    100342: soldier_r_Jacket_3_bone
+    100344: soldier_r_Jacket_3_ctrl
+    100346: soldier_r_Knee_bone
+    100348: soldier_r_Middle_1_bone
+    100350: soldier_r_Middle_2_bone
+    100352: soldier_r_Middle_3-nub_bone
+    100354: soldier_r_Middle_3_bone
+    100356: soldier_r_Middle_ctrl
+    100358: soldier_r_Mouth-nub_bone
+    100360: soldier_r_Mouth_bone
+    100362: soldier_r_Mouth_ctrl
+    100364: soldier_r_Pinky_1_bone
+    100366: soldier_r_Pinky_2_bone
+    100368: soldier_r_Pinky_3-nub_bone
+    100370: soldier_r_Pinky_3_bone
+    100372: soldier_r_Pinky_ctrl
+    100374: soldier_r_Ring_1_bone
+    100376: soldier_r_Ring_2_bone
+    100378: soldier_r_Ring_3-nub_bone
+    100380: soldier_r_Ring_3_bone
+    100382: soldier_r_Ring_ctrl
+    100384: soldier_r_Shoulder_bone
+    100386: soldier_r_Shoulder_FK_bone
+    100388: soldier_r_Shoulder_FK_ctrl
+    100390: soldier_r_Shoulder_IK_bone
+    100392: soldier_r_ShoulderRoll_bone
+    100394: soldier_r_ShoulderTwist_hlp
+    100396: soldier_r_Thigh_bone
+    100398: soldier_r_Thumb_1_bone
+    100400: soldier_r_Thumb_2_bone
+    100402: soldier_r_Thumb_3-nub_bone
+    100404: soldier_r_Thumb_3_bone
+    100406: soldier_r_Thumb_ctrl
+    100408: soldier_r_Toe-nub_bone
+    100410: soldier_r_Toe_bone
+    100412: soldier_r_toe_IKGoal
+    100414: soldier_r_ToeLift_hlp
+    100416: soldier_r_ToeTap_hlp
+    100418: soldier_r_Wrist_bone
+    100420: soldier_r_Wrist_FK_bone
+    100422: soldier_r_Wrist_IK_bone
+    100424: soldier_Spine1_bone
+    100426: soldier_Spine2_bone
+    100428: soldier_Spine3_bone
+    100430: soldier_SpineBase_ctrl
+    100432: soldier_Teeth_mesh
+    100434: soldier_Tongue_mesh
+    400000: //RootNode
+    400002: soldier_Barrel-nub_bone
+    400004: soldier_Barrel_bone
+    400006: soldier_Belt_mesh
+    400008: soldier_Body_mesh
+    400010: soldier_Butt-nub_bone
+    400012: soldier_Butt_bone
+    400014: soldier_COM_ctrl
+    400016: soldier_Hair_1_bone
+    400018: soldier_Hair_1_ctrl
+    400020: soldier_Hair_2_bone
+    400022: soldier_Hair_2_ctrl
+    400024: soldier_Hair_3_bone
+    400026: soldier_Hair_3_ctrl
+    400028: soldier_Hair_4-nub_bone
+    400030: soldier_Hair_4_bone
+    400032: soldier_Hair_4_ctrl
+    400034: soldier_Hair_mesh
+    400036: soldier_Hat_mesh
+    400038: soldier_Head-nub_bone
+    400040: soldier_Head_bone
+    400042: soldier_Head_ctrl
+    400044: soldier_Hip_ctrl
+    400046: soldier_Jacket_mesh
+    400048: soldier_Jaw-nub_bone
+    400050: soldier_Jaw_bone
+    400052: soldier_Jaw_ctrl
+    400054: soldier_l_Ankle_bone
+    400056: soldier_l_ball_IKGoal
+    400058: soldier_l_Cheek-nub_bone
+    400060: soldier_l_Cheek_bone
+    400062: soldier_l_Cheek_ctrl
+    400064: soldier_l_Clav_bone
+    400066: soldier_l_Clavicle_ctrl
+    400068: soldier_l_Elbow_FK_ctrl
+    400070: soldier_l_Eye-nub_bone
+    400072: soldier_l_Eye_bone
+    400074: soldier_l_Eye_ctrl
+    400076: soldier_l_Eyebrow-nub_bone
+    400078: soldier_l_Eyebrow_bone
+    400080: soldier_l_Eyebrow_ctrl
+    400082: soldier_l_EyelidLower-nub_bone
+    400084: soldier_l_EyelidLower_bone
+    400086: soldier_l_EyelidLower_ctrl
+    400088: soldier_l_EyelidUpper-nub_bone
+    400090: soldier_l_EyelidUpper_bone
+    400092: soldier_l_EyelidUpper_ctrl
+    400094: soldier_l_Foot_ctrl
+    400096: soldier_l_Forearm_bone
+    400098: soldier_l_Forearm_FK_bone
+    400100: soldier_l_Forearm_IK_bone
+    400102: soldier_l_ForearmRoll1_bone
+    400104: soldier_l_ForearmRoll2_bone
+    400106: soldier_l_Hand-nub_bone
+    400108: soldier_l_Hand_bone
+    400110: soldier_l_Hand_FK_ctrl
+    400112: soldier_l_Hand_IK_ctrl
+    400114: soldier_l_Hand_IKGoal
+    400116: soldier_l_Heel_hlp
+    400118: soldier_l_heel_IKGoal
+    400120: soldier_l_HeelPeel_hlp
+    400122: soldier_l_Index_1_bone
+    400124: soldier_l_Index_2_bone
+    400126: soldier_l_Index_3-nub_bone
+    400128: soldier_l_Index_3_bone
+    400130: soldier_l_Index_ctrl
+    400132: soldier_l_Jacket_1_bone
+    400134: soldier_l_Jacket_1_ctrl
+    400136: soldier_l_Jacket_2_bone
+    400138: soldier_l_Jacket_2_ctrl
+    400140: soldier_l_Jacket_3-nub_bone
+    400142: soldier_l_Jacket_3_bone
+    400144: soldier_l_Jacket_3_ctrl
+    400146: soldier_l_Knee_bone
+    400148: soldier_l_Middle_1_bone
+    400150: soldier_l_Middle_2_bone
+    400152: soldier_l_Middle_3-nub_bone
+    400154: soldier_l_Middle_3_bone
+    400156: soldier_l_Middle_ctrl
+    400158: soldier_l_Mouth-nub_bone
+    400160: soldier_l_Mouth_bone
+    400162: soldier_l_Mouth_ctrl
+    400164: soldier_l_Pinky_1_bone
+    400166: soldier_l_Pinky_2_bone
+    400168: soldier_l_Pinky_3-nub_bone
+    400170: soldier_l_Pinky_3_bone
+    400172: soldier_l_Pinky_ctrl
+    400174: soldier_l_Ring_1_bone
+    400176: soldier_l_Ring_2_bone
+    400178: soldier_l_Ring_3-nub_bone
+    400180: soldier_l_Ring_3_bone
+    400182: soldier_l_Ring_ctrl
+    400184: soldier_l_Shoulder_bone
+    400186: soldier_l_Shoulder_FK_bone
+    400188: soldier_l_Shoulder_FK_ctrl
+    400190: soldier_l_Shoulder_IK_bone
+    400192: soldier_l_ShoulderRoll_bone
+    400194: soldier_l_ShoulderTwist_hlp
+    400196: soldier_l_Thigh_bone
+    400198: soldier_l_Thumb_1_bone
+    400200: soldier_l_Thumb_2_bone
+    400202: soldier_l_Thumb_3-nub_bone
+    400204: soldier_l_Thumb_3_bone
+    400206: soldier_l_Thumb_ctrl
+    400208: soldier_l_Toe-nub_bone
+    400210: soldier_l_Toe_bone
+    400212: soldier_l_toe_IKGoal
+    400214: soldier_l_ToeLift_hlp
+    400216: soldier_l_ToeTap_hlp
+    400218: soldier_l_Wrist_bone
+    400220: soldier_l_Wrist_FK_bone
+    400222: soldier_l_Wrist_IK_bone
+    400224: soldier_Lock-nub_bone
+    400226: soldier_Lock_bone
+    400228: soldier_Lock_ctrl
+    400230: soldier_Main_ctrl
+    400232: soldier_Mandible_bone
+    400234: soldier_Mandible_ctrl
+    400236: soldier_Maxilla-nub_bone
+    400238: soldier_Maxilla_bone
+    400240: soldier_Maxilla_ctrl
+    400242: soldier_Musket_ctrl
+    400244: soldier_Musket_mesh
+    400246: soldier_Neck_bone
+    400248: soldier_NeckBase_ctrl
+    400250: soldier_Pelvis-nub_bone
+    400252: soldier_Pelvis_bone
+    400254: soldier_r_Ankle_bone
+    400256: soldier_r_ball_IKGoal
+    400258: soldier_r_Cheek-nub_bone
+    400260: soldier_r_Cheek_bone
+    400262: soldier_r_Cheek_ctrl
+    400264: soldier_r_Clav_bone
+    400266: soldier_r_Clavicle_ctrl
+    400268: soldier_r_Elbow_FK_ctrl
+    400270: soldier_r_Eye-nub_bone
+    400272: soldier_r_Eye_bone
+    400274: soldier_r_Eye_ctrl
+    400276: soldier_r_Eyebrow-nub_bone
+    400278: soldier_r_Eyebrow_bone
+    400280: soldier_r_Eyebrow_ctrl
+    400282: soldier_r_EyelidLower-nub_bone
+    400284: soldier_r_EyelidLower_bone
+    400286: soldier_r_EyelidLower_ctrl
+    400288: soldier_r_EyelidUpper-nub_bone
+    400290: soldier_r_EyelidUpper_bone
+    400292: soldier_r_EyelidUpper_ctrl
+    400294: soldier_r_Foot_ctrl
+    400296: soldier_r_Forearm_bone
+    400298: soldier_r_Forearm_FK_bone
+    400300: soldier_r_Forearm_IK_bone
+    400302: soldier_r_ForearmRoll1_bone
+    400304: soldier_r_ForearmRoll2_bone
+    400306: soldier_r_Hand-nub_bone
+    400308: soldier_r_Hand_bone
+    400310: soldier_r_Hand_FK_ctrl
+    400312: soldier_r_Hand_IK_ctrl
+    400314: soldier_r_Hand_IKGoal
+    400316: soldier_r_Heel_hlp
+    400318: soldier_r_heel_IKGoal
+    400320: soldier_r_HeelPeel_hlp
+    400322: soldier_r_Index_1_bone
+    400324: soldier_r_Index_2_bone
+    400326: soldier_r_Index_3-nub_bone
+    400328: soldier_r_Index_3_bone
+    400330: soldier_r_Index_ctrl
+    400332: soldier_r_Jacket_1_bone
+    400334: soldier_r_Jacket_1_ctrl
+    400336: soldier_r_Jacket_2_bone
+    400338: soldier_r_Jacket_2_ctrl
+    400340: soldier_r_Jacket_3-nub_bone
+    400342: soldier_r_Jacket_3_bone
+    400344: soldier_r_Jacket_3_ctrl
+    400346: soldier_r_Knee_bone
+    400348: soldier_r_Middle_1_bone
+    400350: soldier_r_Middle_2_bone
+    400352: soldier_r_Middle_3-nub_bone
+    400354: soldier_r_Middle_3_bone
+    400356: soldier_r_Middle_ctrl
+    400358: soldier_r_Mouth-nub_bone
+    400360: soldier_r_Mouth_bone
+    400362: soldier_r_Mouth_ctrl
+    400364: soldier_r_Pinky_1_bone
+    400366: soldier_r_Pinky_2_bone
+    400368: soldier_r_Pinky_3-nub_bone
+    400370: soldier_r_Pinky_3_bone
+    400372: soldier_r_Pinky_ctrl
+    400374: soldier_r_Ring_1_bone
+    400376: soldier_r_Ring_2_bone
+    400378: soldier_r_Ring_3-nub_bone
+    400380: soldier_r_Ring_3_bone
+    400382: soldier_r_Ring_ctrl
+    400384: soldier_r_Shoulder_bone
+    400386: soldier_r_Shoulder_FK_bone
+    400388: soldier_r_Shoulder_FK_ctrl
+    400390: soldier_r_Shoulder_IK_bone
+    400392: soldier_r_ShoulderRoll_bone
+    400394: soldier_r_ShoulderTwist_hlp
+    400396: soldier_r_Thigh_bone
+    400398: soldier_r_Thumb_1_bone
+    400400: soldier_r_Thumb_2_bone
+    400402: soldier_r_Thumb_3-nub_bone
+    400404: soldier_r_Thumb_3_bone
+    400406: soldier_r_Thumb_ctrl
+    400408: soldier_r_Toe-nub_bone
+    400410: soldier_r_Toe_bone
+    400412: soldier_r_toe_IKGoal
+    400414: soldier_r_ToeLift_hlp
+    400416: soldier_r_ToeTap_hlp
+    400418: soldier_r_Wrist_bone
+    400420: soldier_r_Wrist_FK_bone
+    400422: soldier_r_Wrist_IK_bone
+    400424: soldier_Spine1_bone
+    400426: soldier_Spine2_bone
+    400428: soldier_Spine3_bone
+    400430: soldier_SpineBase_ctrl
+    400432: soldier_Teeth_mesh
+    400434: soldier_Tongue_mesh
+    2300000: soldier_l_Clavicle_ctrl
+    2300002: soldier_l_Elbow_FK_ctrl
+    2300004: soldier_l_Foot_ctrl
+    2300006: soldier_l_Hand_FK_ctrl
+    2300008: soldier_l_Hand_IK_ctrl
+    2300010: soldier_l_Index_ctrl
+    2300012: soldier_l_Middle_ctrl
+    2300014: soldier_l_Pinky_ctrl
+    2300016: soldier_l_Ring_ctrl
+    2300018: soldier_l_Shoulder_FK_ctrl
+    2300020: soldier_l_Thumb_ctrl
+    2300022: soldier_r_Clavicle_ctrl
+    2300024: soldier_r_Elbow_FK_ctrl
+    2300026: soldier_r_Foot_ctrl
+    2300028: soldier_r_Hand_FK_ctrl
+    2300030: soldier_r_Hand_IK_ctrl
+    2300032: soldier_r_Index_ctrl
+    2300034: soldier_r_Middle_ctrl
+    2300036: soldier_r_Pinky_ctrl
+    2300038: soldier_r_Ring_ctrl
+    2300040: soldier_r_Shoulder_FK_ctrl
+    2300042: soldier_r_Thumb_ctrl
+    3300000: soldier_l_Clavicle_ctrl
+    3300002: soldier_l_Elbow_FK_ctrl
+    3300004: soldier_l_Foot_ctrl
+    3300006: soldier_l_Hand_FK_ctrl
+    3300008: soldier_l_Hand_IK_ctrl
+    3300010: soldier_l_Index_ctrl
+    3300012: soldier_l_Middle_ctrl
+    3300014: soldier_l_Pinky_ctrl
+    3300016: soldier_l_Ring_ctrl
+    3300018: soldier_l_Shoulder_FK_ctrl
+    3300020: soldier_l_Thumb_ctrl
+    3300022: soldier_r_Clavicle_ctrl
+    3300024: soldier_r_Elbow_FK_ctrl
+    3300026: soldier_r_Foot_ctrl
+    3300028: soldier_r_Hand_FK_ctrl
+    3300030: soldier_r_Hand_IK_ctrl
+    3300032: soldier_r_Index_ctrl
+    3300034: soldier_r_Middle_ctrl
+    3300036: soldier_r_Pinky_ctrl
+    3300038: soldier_r_Ring_ctrl
+    3300040: soldier_r_Shoulder_FK_ctrl
+    3300042: soldier_r_Thumb_ctrl
+    4300000: soldier_Body_mesh
+    4300002: soldier_Jacket_mesh
+    4300004: soldier_Hat_mesh
+    4300006: soldier_Musket_mesh
+    4300008: soldier_Belt_mesh
+    4300010: soldier_Teeth_mesh
+    4300012: soldier_Tongue_mesh
+    4300014: soldier_Hair_mesh
+    4300016: soldier_l_Hand_IK_ctrl
+    4300018: soldier_r_Hand_IK_ctrl
+    4300020: soldier_r_Foot_ctrl
+    4300022: soldier_l_Foot_ctrl
+    4300024: soldier_l_Pinky_ctrl
+    4300026: soldier_l_Ring_ctrl
+    4300028: soldier_l_Middle_ctrl
+    4300030: soldier_l_Index_ctrl
+    4300032: soldier_l_Thumb_ctrl
+    4300034: soldier_l_Shoulder_FK_ctrl
+    4300036: soldier_l_Elbow_FK_ctrl
+    4300038: soldier_l_Hand_FK_ctrl
+    4300040: soldier_r_Thumb_ctrl
+    4300042: soldier_r_Pinky_ctrl
+    4300044: soldier_r_Ring_ctrl
+    4300046: soldier_r_Middle_ctrl
+    4300048: soldier_r_Index_ctrl
+    4300050: soldier_r_Shoulder_FK_ctrl
+    4300052: soldier_r_Elbow_FK_ctrl
+    4300054: soldier_r_Hand_FK_ctrl
+    4300056: soldier_l_Clavicle_ctrl
+    4300058: soldier_r_Clavicle_ctrl
+    7400000: turnright
+    9500000: //RootNode
+    13700000: soldier_Belt_mesh
+    13700002: soldier_Body_mesh
+    13700004: soldier_Hair_mesh
+    13700006: soldier_Hat_mesh
+    13700008: soldier_Jacket_mesh
+    13700010: soldier_Musket_mesh
+    13700012: soldier_Teeth_mesh
+    13700014: soldier_Tongue_mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: turnright
+      takeName: Take 001
+      firstFrame: 337
+      lastFrame: 361
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: soldier_Belt_mesh
+        weight: 1
+      - path: soldier_Body_mesh
+        weight: 1
+      - path: soldier_Hair_mesh
+        weight: 1
+      - path: soldier_Hat_mesh
+        weight: 1
+      - path: soldier_Head_ctrl
+        weight: 1
+      - path: soldier_Hip_ctrl
+        weight: 1
+      - path: soldier_Jacket_mesh
+        weight: 1
+      - path: soldier_l_Hand_IK_ctrl
+        weight: 1
+      - path: soldier_l_Hand_IK_ctrl/soldier_l_Hand_IKGoal
+        weight: 1
+      - path: soldier_l_ShoulderTwist_hlp
+        weight: 1
+      - path: soldier_Main_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Musket_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Musket_ctrl/soldier_Barrel_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Musket_ctrl/soldier_Barrel_bone/soldier_Barrel-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Musket_ctrl/soldier_Barrel_bone/soldier_Lock_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Musket_ctrl/soldier_Barrel_bone/soldier_Lock_bone/soldier_Lock-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Musket_ctrl/soldier_Butt_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Musket_ctrl/soldier_Butt_bone/soldier_Butt-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Musket_ctrl/soldier_Butt_bone/soldier_Lock_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_l_Jacket_1_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_l_Jacket_1_bone/soldier_l_Jacket_2_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_l_Jacket_1_bone/soldier_l_Jacket_2_bone/soldier_l_Jacket_3_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_l_Jacket_1_bone/soldier_l_Jacket_2_bone/soldier_l_Jacket_3_bone/soldier_l_Jacket_3-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_l_Jacket_1_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_l_Jacket_1_ctrl/soldier_l_Jacket_2_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_l_Jacket_1_ctrl/soldier_l_Jacket_2_ctrl/soldier_l_Jacket_3_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_l_Thigh_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_l_Thigh_bone/soldier_l_Knee_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_l_Thigh_bone/soldier_l_Knee_bone/soldier_l_Ankle_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_l_Thigh_bone/soldier_l_Knee_bone/soldier_l_Ankle_bone/soldier_l_Toe_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_l_Thigh_bone/soldier_l_Knee_bone/soldier_l_Ankle_bone/soldier_l_Toe_bone/soldier_l_Toe-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Pelvis-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_r_Jacket_1_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_r_Jacket_1_bone/soldier_r_Jacket_2_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_r_Jacket_1_bone/soldier_r_Jacket_2_bone/soldier_r_Jacket_3_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_r_Jacket_1_bone/soldier_r_Jacket_2_bone/soldier_r_Jacket_3_bone/soldier_r_Jacket_3-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_r_Jacket_1_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_r_Jacket_1_ctrl/soldier_r_Jacket_2_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_r_Jacket_1_ctrl/soldier_r_Jacket_2_ctrl/soldier_r_Jacket_3_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_r_Thigh_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_r_Thigh_bone/soldier_r_Knee_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_r_Thigh_bone/soldier_r_Knee_bone/soldier_r_Ankle_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_r_Thigh_bone/soldier_r_Knee_bone/soldier_r_Ankle_bone/soldier_r_Toe_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_r_Thigh_bone/soldier_r_Knee_bone/soldier_r_Ankle_bone/soldier_r_Toe_bone/soldier_r_Toe-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_ForearmRoll1_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_ForearmRoll2_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_Wrist_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_Wrist_bone/soldier_l_Hand_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_Wrist_bone/soldier_l_Hand_bone/soldier_l_Hand-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_Wrist_bone/soldier_l_Hand_bone/soldier_l_Index_1_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_Wrist_bone/soldier_l_Hand_bone/soldier_l_Index_1_bone/soldier_l_Index_2_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_Wrist_bone/soldier_l_Hand_bone/soldier_l_Index_1_bone/soldier_l_Index_2_bone/soldier_l_Index_3_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_Wrist_bone/soldier_l_Hand_bone/soldier_l_Index_1_bone/soldier_l_Index_2_bone/soldier_l_Index_3_bone/soldier_l_Index_3-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_Wrist_bone/soldier_l_Hand_bone/soldier_l_Index_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_Wrist_bone/soldier_l_Hand_bone/soldier_l_Middle_1_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_Wrist_bone/soldier_l_Hand_bone/soldier_l_Middle_1_bone/soldier_l_Middle_2_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_Wrist_bone/soldier_l_Hand_bone/soldier_l_Middle_1_bone/soldier_l_Middle_2_bone/soldier_l_Middle_3_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_Wrist_bone/soldier_l_Hand_bone/soldier_l_Middle_1_bone/soldier_l_Middle_2_bone/soldier_l_Middle_3_bone/soldier_l_Middle_3-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_Wrist_bone/soldier_l_Hand_bone/soldier_l_Middle_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_Wrist_bone/soldier_l_Hand_bone/soldier_l_Pinky_1_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_Wrist_bone/soldier_l_Hand_bone/soldier_l_Pinky_1_bone/soldier_l_Pinky_2_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_Wrist_bone/soldier_l_Hand_bone/soldier_l_Pinky_1_bone/soldier_l_Pinky_2_bone/soldier_l_Pinky_3_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_Wrist_bone/soldier_l_Hand_bone/soldier_l_Pinky_1_bone/soldier_l_Pinky_2_bone/soldier_l_Pinky_3_bone/soldier_l_Pinky_3-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_Wrist_bone/soldier_l_Hand_bone/soldier_l_Pinky_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_Wrist_bone/soldier_l_Hand_bone/soldier_l_Ring_1_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_Wrist_bone/soldier_l_Hand_bone/soldier_l_Ring_1_bone/soldier_l_Ring_2_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_Wrist_bone/soldier_l_Hand_bone/soldier_l_Ring_1_bone/soldier_l_Ring_2_bone/soldier_l_Ring_3_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_Wrist_bone/soldier_l_Hand_bone/soldier_l_Ring_1_bone/soldier_l_Ring_2_bone/soldier_l_Ring_3_bone/soldier_l_Ring_3-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_Wrist_bone/soldier_l_Hand_bone/soldier_l_Ring_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_Wrist_bone/soldier_l_Hand_bone/soldier_l_Thumb_1_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_Wrist_bone/soldier_l_Hand_bone/soldier_l_Thumb_1_bone/soldier_l_Thumb_2_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_Wrist_bone/soldier_l_Hand_bone/soldier_l_Thumb_1_bone/soldier_l_Thumb_2_bone/soldier_l_Thumb_3_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_Wrist_bone/soldier_l_Hand_bone/soldier_l_Thumb_1_bone/soldier_l_Thumb_2_bone/soldier_l_Thumb_3_bone/soldier_l_Thumb_3-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_Forearm_bone/soldier_l_Wrist_bone/soldier_l_Hand_bone/soldier_l_Thumb_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_bone/soldier_l_ShoulderRoll_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_FK_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_FK_bone/soldier_l_Forearm_FK_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_FK_bone/soldier_l_Forearm_FK_bone/soldier_l_Wrist_FK_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_FK_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_FK_ctrl/soldier_l_Elbow_FK_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_FK_ctrl/soldier_l_Elbow_FK_ctrl/soldier_l_Hand_FK_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_IK_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_IK_bone/soldier_l_Forearm_IK_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clav_bone/soldier_l_Shoulder_IK_bone/soldier_l_Forearm_IK_bone/soldier_l_Wrist_IK_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_l_Clavicle_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_Hair_1_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_Hair_1_bone/soldier_Hair_2_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_Hair_1_bone/soldier_Hair_2_bone/soldier_Hair_3_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_Hair_1_bone/soldier_Hair_2_bone/soldier_Hair_3_bone/soldier_Hair_4_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_Hair_1_bone/soldier_Hair_2_bone/soldier_Hair_3_bone/soldier_Hair_4_bone/soldier_Hair_4-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_Hair_1_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_Hair_1_ctrl/soldier_Hair_2_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_Hair_1_ctrl/soldier_Hair_2_ctrl/soldier_Hair_3_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_Hair_1_ctrl/soldier_Hair_2_ctrl/soldier_Hair_3_ctrl/soldier_Hair_4_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_Head-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_Jaw_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_l_Cheek_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_l_Cheek_bone/soldier_l_Cheek-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_l_Cheek_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_l_Eye_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_l_Eye_bone/soldier_l_Eye-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_l_Eye_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_l_Eyebrow_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_l_Eyebrow_bone/soldier_l_Eyebrow-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_l_Eyebrow_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_l_EyelidLower_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_l_EyelidLower_bone/soldier_l_EyelidLower-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_l_EyelidLower_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_l_EyelidUpper_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_l_EyelidUpper_bone/soldier_l_EyelidUpper-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_l_EyelidUpper_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_l_Mouth_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_l_Mouth_bone/soldier_l_Mouth-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_l_Mouth_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_Mandible_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_Mandible_bone/soldier_Jaw_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_Mandible_bone/soldier_Jaw_bone/soldier_Jaw-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_Mandible_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_Maxilla_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_Maxilla_bone/soldier_Maxilla-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_Maxilla_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_r_Cheek_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_r_Cheek_bone/soldier_r_Cheek-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_r_Cheek_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_r_Eye_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_r_Eye_bone/soldier_r_Eye-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_r_Eye_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_r_Eyebrow_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_r_Eyebrow_bone/soldier_r_Eyebrow-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_r_Eyebrow_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_r_EyelidLower_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_r_EyelidLower_bone/soldier_r_EyelidLower-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_r_EyelidLower_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_r_EyelidUpper_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_r_EyelidUpper_bone/soldier_r_EyelidUpper-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_r_EyelidUpper_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_r_Mouth_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_r_Mouth_bone/soldier_r_Mouth-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_Neck_bone/soldier_Head_bone/soldier_r_Mouth_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_ForearmRoll1_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_ForearmRoll2_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_Wrist_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_Wrist_bone/soldier_r_Hand_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_Wrist_bone/soldier_r_Hand_bone/soldier_r_Hand-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_Wrist_bone/soldier_r_Hand_bone/soldier_r_Index_1_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_Wrist_bone/soldier_r_Hand_bone/soldier_r_Index_1_bone/soldier_r_Index_2_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_Wrist_bone/soldier_r_Hand_bone/soldier_r_Index_1_bone/soldier_r_Index_2_bone/soldier_r_Index_3_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_Wrist_bone/soldier_r_Hand_bone/soldier_r_Index_1_bone/soldier_r_Index_2_bone/soldier_r_Index_3_bone/soldier_r_Index_3-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_Wrist_bone/soldier_r_Hand_bone/soldier_r_Index_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_Wrist_bone/soldier_r_Hand_bone/soldier_r_Middle_1_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_Wrist_bone/soldier_r_Hand_bone/soldier_r_Middle_1_bone/soldier_r_Middle_2_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_Wrist_bone/soldier_r_Hand_bone/soldier_r_Middle_1_bone/soldier_r_Middle_2_bone/soldier_r_Middle_3_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_Wrist_bone/soldier_r_Hand_bone/soldier_r_Middle_1_bone/soldier_r_Middle_2_bone/soldier_r_Middle_3_bone/soldier_r_Middle_3-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_Wrist_bone/soldier_r_Hand_bone/soldier_r_Middle_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_Wrist_bone/soldier_r_Hand_bone/soldier_r_Pinky_1_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_Wrist_bone/soldier_r_Hand_bone/soldier_r_Pinky_1_bone/soldier_r_Pinky_2_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_Wrist_bone/soldier_r_Hand_bone/soldier_r_Pinky_1_bone/soldier_r_Pinky_2_bone/soldier_r_Pinky_3_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_Wrist_bone/soldier_r_Hand_bone/soldier_r_Pinky_1_bone/soldier_r_Pinky_2_bone/soldier_r_Pinky_3_bone/soldier_r_Pinky_3-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_Wrist_bone/soldier_r_Hand_bone/soldier_r_Pinky_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_Wrist_bone/soldier_r_Hand_bone/soldier_r_Ring_1_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_Wrist_bone/soldier_r_Hand_bone/soldier_r_Ring_1_bone/soldier_r_Ring_2_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_Wrist_bone/soldier_r_Hand_bone/soldier_r_Ring_1_bone/soldier_r_Ring_2_bone/soldier_r_Ring_3_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_Wrist_bone/soldier_r_Hand_bone/soldier_r_Ring_1_bone/soldier_r_Ring_2_bone/soldier_r_Ring_3_bone/soldier_r_Ring_3-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_Wrist_bone/soldier_r_Hand_bone/soldier_r_Ring_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_Wrist_bone/soldier_r_Hand_bone/soldier_r_Thumb_1_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_Wrist_bone/soldier_r_Hand_bone/soldier_r_Thumb_1_bone/soldier_r_Thumb_2_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_Wrist_bone/soldier_r_Hand_bone/soldier_r_Thumb_1_bone/soldier_r_Thumb_2_bone/soldier_r_Thumb_3_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_Wrist_bone/soldier_r_Hand_bone/soldier_r_Thumb_1_bone/soldier_r_Thumb_2_bone/soldier_r_Thumb_3_bone/soldier_r_Thumb_3-nub_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_Forearm_bone/soldier_r_Wrist_bone/soldier_r_Hand_bone/soldier_r_Thumb_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_bone/soldier_r_ShoulderRoll_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_FK_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_FK_bone/soldier_r_Forearm_FK_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_FK_bone/soldier_r_Forearm_FK_bone/soldier_r_Wrist_FK_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_FK_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_FK_ctrl/soldier_r_Elbow_FK_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_FK_ctrl/soldier_r_Elbow_FK_ctrl/soldier_r_Hand_FK_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_IK_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_IK_bone/soldier_r_Forearm_IK_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clav_bone/soldier_r_Shoulder_IK_bone/soldier_r_Forearm_IK_bone/soldier_r_Wrist_IK_bone
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_COM_ctrl/soldier_Pelvis_bone/soldier_Spine1_bone/soldier_Spine2_bone/soldier_Spine3_bone/soldier_r_Clavicle_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_l_Foot_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_l_Foot_ctrl/soldier_l_Heel_hlp
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_l_Foot_ctrl/soldier_l_Heel_hlp/soldier_l_ToeLift_hlp
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_l_Foot_ctrl/soldier_l_Heel_hlp/soldier_l_ToeLift_hlp/soldier_l_HeelPeel_hlp
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_l_Foot_ctrl/soldier_l_Heel_hlp/soldier_l_ToeLift_hlp/soldier_l_HeelPeel_hlp/soldier_l_ball_IKGoal
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_l_Foot_ctrl/soldier_l_Heel_hlp/soldier_l_ToeLift_hlp/soldier_l_HeelPeel_hlp/soldier_l_heel_IKGoal
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_l_Foot_ctrl/soldier_l_Heel_hlp/soldier_l_ToeLift_hlp/soldier_l_ToeTap_hlp
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_l_Foot_ctrl/soldier_l_Heel_hlp/soldier_l_ToeLift_hlp/soldier_l_ToeTap_hlp/soldier_l_toe_IKGoal
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_r_Foot_ctrl
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_r_Foot_ctrl/soldier_r_Heel_hlp
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_r_Foot_ctrl/soldier_r_Heel_hlp/soldier_r_ToeLift_hlp
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_r_Foot_ctrl/soldier_r_Heel_hlp/soldier_r_ToeLift_hlp/soldier_r_HeelPeel_hlp
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_r_Foot_ctrl/soldier_r_Heel_hlp/soldier_r_ToeLift_hlp/soldier_r_HeelPeel_hlp/soldier_r_ball_IKGoal
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_r_Foot_ctrl/soldier_r_Heel_hlp/soldier_r_ToeLift_hlp/soldier_r_HeelPeel_hlp/soldier_r_heel_IKGoal
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_r_Foot_ctrl/soldier_r_Heel_hlp/soldier_r_ToeLift_hlp/soldier_r_ToeTap_hlp
+        weight: 1
+      - path: soldier_Main_ctrl/soldier_r_Foot_ctrl/soldier_r_Heel_hlp/soldier_r_ToeLift_hlp/soldier_r_ToeTap_hlp/soldier_r_toe_IKGoal
+        weight: 1
+      - path: soldier_Musket_mesh
+        weight: 1
+      - path: soldier_NeckBase_ctrl
+        weight: 1
+      - path: soldier_r_Hand_IK_ctrl
+        weight: 1
+      - path: soldier_r_Hand_IK_ctrl/soldier_r_Hand_IKGoal
+        weight: 1
+      - path: soldier_r_ShoulderTwist_hlp
+        weight: 1
+      - path: soldier_SpineBase_ctrl
+        weight: 1
+      - path: soldier_Teeth_mesh
+        weight: 1
+      - path: soldier_Tongue_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: soldier_Main_ctrl
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

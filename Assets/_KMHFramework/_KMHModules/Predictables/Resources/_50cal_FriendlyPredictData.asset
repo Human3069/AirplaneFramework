@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8007af098fc3244292c0956d7842e68, type: 3}
+  m_Name: _50cal_FriendlyPredictData
+  m_EditorClassIdentifier: 
+  dataList:
+  - Distance: 0
+    Time: 0
+    SpeedOnHit: 1100
+    AdditionalHeight: 0
+  - Distance: 150
+    Time: 0.1498607
+    SpeedOnHit: 1098.4619
+    AdditionalHeight: 0.10496521
+  - Distance: 300
+    Time: 0.27671972
+    SpeedOnHit: 1096.9279
+    AdditionalHeight: 0.39271545
+  - Distance: 450
+    Time: 0.41555858
+    SpeedOnHit: 1095.3975
+    AdditionalHeight: 0.86380005
+  - Distance: 600
+    Time: 0.554267
+    SpeedOnHit: 1093.8711
+    AdditionalHeight: 1.518753
+  - Distance: 750
+    Time: 0.69256866
+    SpeedOnHit: 1092.3485
+    AdditionalHeight: 2.3580627
+  - Distance: 900
+    Time: 0.8331813
+    SpeedOnHit: 1090.8298
+    AdditionalHeight: 3.382248
+  - Distance: 1050
+    Time: 0.9575791
+    SpeedOnHit: 1089.5311
+    AdditionalHeight: 4.5920258
+  - Distance: 1200
+    Time: 1.1088947
+    SpeedOnHit: 1088.0197
+    AdditionalHeight: 5.9880066
+  - Distance: 1350
+    Time: 1.229146
+    SpeedOnHit: 1086.5118
+    AdditionalHeight: 7.570404
+  - Distance: 1500
+    Time: 1.3785477
+    SpeedOnHit: 1085.0079
+    AdditionalHeight: 9.339783
+  - Distance: 1650
+    Time: 1.5147765
+    SpeedOnHit: 1083.5079
+    AdditionalHeight: 11.296616
+  - Distance: 1800
+    Time: 1.6504848
+    SpeedOnHit: 1082.0117
+    AdditionalHeight: 13.441452
+  - Distance: 1950
+    Time: 1.7951068
+    SpeedOnHit: 1080.5194
+    AdditionalHeight: 15.774826
+  - Distance: 2100
+    Time: 1.9352334
+    SpeedOnHit: 1079.0308
+    AdditionalHeight: 18.297272
+  - Distance: 2250
+    Time: 2.076142
+    SpeedOnHit: 1077.5461
+    AdditionalHeight: 21.009308
+  - Distance: 2400
+    Time: 2.2146678
+    SpeedOnHit: 1076.0653
+    AdditionalHeight: 23.911499
+  - Distance: 2550
+    Time: 2.3528838
+    SpeedOnHit: 1074.5883
+    AdditionalHeight: 27.004364
+  - Distance: 2700
+    Time: 2.5005198
+    SpeedOnHit: 1073.115
+    AdditionalHeight: 30.288422
+  - Distance: 2850
+    Time: 2.6377702
+    SpeedOnHit: 1071.6456
+    AdditionalHeight: 33.76422
+  - Distance: 3000
+    Time: 2.7733002
+    SpeedOnHit: 1070.18
+    AdditionalHeight: 37.432312

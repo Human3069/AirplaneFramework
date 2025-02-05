@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 087cdf83e07604e4ab78de6363730bdb, type: 3}
+  m_Name: KeyCodeDataBundle
+  m_EditorClassIdentifier: 
+  KeySettingDic:
+    _serializedList:
+    - Key: 0
+      Value:
+        keyCode: 97
+        eventType: 0
+        _isInput: 0
+        _toggleValue: 0
+    - Key: 1
+      Value:
+        keyCode: 100
+        eventType: 0
+        _isInput: 0
+        _toggleValue: 0
+    - Key: 2
+      Value:
+        keyCode: 119
+        eventType: 0
+        _isInput: 0
+        _toggleValue: 0
+    - Key: 3
+      Value:
+        keyCode: 115
+        eventType: 0
+        _isInput: 0
+        _toggleValue: 0
+    - Key: 4
+      Value:
+        keyCode: 114
+        eventType: 1
+        _isInput: 0
+        _toggleValue: 0
+    - Key: 5
+      Value:
+        keyCode: 102
+        eventType: 1
+        _isInput: 0
+        _toggleValue: 0
+    - Key: 6
+      Value:
+        keyCode: 103
+        eventType: 1
+        _isInput: 0
+        _toggleValue: 0
+    - Key: 7
+      Value:
+        keyCode: 306
+        eventType: 0
+        _isInput: 0
+        _toggleValue: 0
+    - Key: 8
+      Value:
+        keyCode: 32
+        eventType: 0
+        _isInput: 0
+        _toggleValue: 0
