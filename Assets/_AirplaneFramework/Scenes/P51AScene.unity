@@ -136,10 +136,6 @@ PrefabInstance:
       value: EnemyPlaneHandler_1
       objectReference: {fileID: 0}
     - target: {fileID: 1559504887869703531, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1559504887869703531, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: m_LocalPosition.x
       value: -90.4
       objectReference: {fileID: 0}
@@ -2049,9 +2045,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
+      propertyPath: lookAtPower
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: targetRigidbody
       value: 
       objectReference: {fileID: 255803132}
+    - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
+      propertyPath: straightAheadingTime
+      value: 7.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1559504887869703530, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: m_Name
       value: EnemyPlaneHandler_4
@@ -2119,9 +2123,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
+      propertyPath: lookAtPower
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: targetRigidbody
       value: 
       objectReference: {fileID: 255803132}
+    - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
+      propertyPath: straightAheadingTime
+      value: 7.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1559504887869703530, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: m_Name
       value: EnemyPlaneHandler_8
@@ -3167,9 +3179,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
+      propertyPath: lookAtPower
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: targetRigidbody
       value: 
       objectReference: {fileID: 255803132}
+    - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
+      propertyPath: straightAheadingTime
+      value: 7.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1559504887869703530, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: m_Name
       value: EnemyPlaneHandler_6
@@ -4299,9 +4319,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
+      propertyPath: lookAtPower
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: targetRigidbody
       value: 
       objectReference: {fileID: 255803132}
+    - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
+      propertyPath: straightAheadingTime
+      value: 7.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1559504887869703530, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: m_Name
       value: EnemyPlaneHandler_2
@@ -4660,9 +4688,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
+      propertyPath: lookAtPower
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: targetRigidbody
       value: 
       objectReference: {fileID: 255803132}
+    - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
+      propertyPath: straightAheadingTime
+      value: 7.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1559504887869703530, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: m_Name
       value: EnemyPlaneHandler_7
@@ -6774,9 +6810,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
+      propertyPath: lookAtPower
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: targetRigidbody
       value: 
       objectReference: {fileID: 255803132}
+    - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
+      propertyPath: straightAheadingTime
+      value: 7.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1559504887869703530, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: m_Name
       value: EnemyPlaneHandler_3
@@ -6849,9 +6893,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
+      propertyPath: lookAtPower
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: targetRigidbody
       value: 
       objectReference: {fileID: 255803132}
+    - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
+      propertyPath: straightAheadingTime
+      value: 7.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1559504887869703530, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: m_Name
       value: EnemyPlaneHandler_5
@@ -7257,9 +7309,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
+      propertyPath: lookAtPower
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: targetRigidbody
       value: 
       objectReference: {fileID: 255803132}
+    - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
+      propertyPath: straightAheadingTime
+      value: 7.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1559504887869703530, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: m_Name
       value: EnemyPlaneHandler

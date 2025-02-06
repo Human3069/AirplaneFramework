@@ -1,10 +1,17 @@
 using _KMH_Framework;
+using Cysharp.Threading.Tasks;
 using FPS_Framework.Pool;
 using UnityEditor;
 using UnityEngine;
 
 namespace AFramework
 {
+    public enum EnemyPlaneState
+    {
+        StraightAheading,
+        Following,
+    }
+
     [RequireComponent(typeof(Rigidbody))]
     public class EnemyPlaneHandler : Damagable
     {
@@ -33,6 +40,39 @@ namespace AFramework
         [SerializeField]
         protected ParticleSystem onDeadExplosion;
 
+        [Space(10)]
+        [SerializeField]
+        protected float maxAngleToShoot = 5f;
+        [SerializeField]
+        protected float straightAheadingTime = 20f;
+        [SerializeField]
+        protected float followingTime = 30f;
+
+        [Space(10)]
+        [SerializeField]
+        protected EnemyPlaneState planeState;
+
+        protected override void Awake()
+        {
+            base.Awake();
+            AwakeAsync().Forget();
+        }
+
+
+        protected async UniTaskVoid AwakeAsync()
+        {
+            await UniTask.WaitForSeconds(Random.Range(0f, 20f));
+
+            while (IsDead == false)
+            {
+                planeState = EnemyPlaneState.StraightAheading;
+                await UniTask.WaitForSeconds(straightAheadingTime);
+
+                planeState = EnemyPlaneState.Following;
+                await UniTask.WaitForSeconds(followingTime);
+            }
+        }
+
         protected void FixedUpdate()
         {
             _rigidbody.AddForce(this.transform.forward * movePower);
@@ -49,7 +89,10 @@ namespace AFramework
             else
             {
                 // Look at target
-                _rigidbody.AddTorque(Vector3.Cross(this.transform.forward, targetPredict.normalized) * lookAtPower);
+                if (planeState == EnemyPlaneState.Following)
+                {
+                    _rigidbody.AddTorque(Vector3.Cross(this.transform.forward, targetPredict.normalized) * lookAtPower);
+                }
 
                 // Roll stabilization
                 Vector3 rollCorrection = Vector3.Cross(this.transform.up, Vector3.up);
