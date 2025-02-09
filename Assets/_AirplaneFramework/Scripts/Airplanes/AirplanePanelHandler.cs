@@ -106,8 +106,17 @@ namespace AFramework
 
         public void OnFixedUpdate(float actualPower)
         {
+            float altitude = _rigidbody.worldCenterOfMass.y;
             mpsSpeed = _rigidbody.linearVelocity.magnitude;
-            speedoNeedleT.transform.localEulerAngles = new Vector3(0, 90, -kphSpeed / 2f);
+            float hNormal = Vector3Ex.GetHorizontalNormalUnclamped(_rigidbody.transform.eulerAngles.x);
+
+            speedoNeedleT.localEulerAngles = new Vector3(0, 90, -kphSpeed / 2f);
+            altitudeShortNeedleT.localEulerAngles = new Vector3(0, 90, -altitude * 360f / 10000f);
+            altitudeLongNeedleT.localEulerAngles = new Vector3(0, 90, -altitude * 360f / 1000f);
+            compassT.localEulerAngles = new Vector3(0f, -_handler.transform.eulerAngles.y, 0f);
+            gyroAnglerT.localEulerAngles = new Vector3(0, 90, -_handler.transform.eulerAngles.z);
+            gyroBallT.localEulerAngles = new Vector3(0, 90, -_handler.transform.eulerAngles.z);
+            gyroBallT.localPosition = new Vector3(0.4288f, 0.354f - (hNormal * 0.1f), -0.2f); 
 
             _propeller.OnFixedUpdate(mpsSpeed, actualPower);
         }

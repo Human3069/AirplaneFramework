@@ -62,6 +62,36 @@ namespace _KMH_Framework
                 return (angleX - 270f) / 90f;
             }
         }
+
+        public static float GetHorizontalNormalUnclamped(float eulerAngleX)
+        {
+            float angleX = eulerAngleX % 360f;
+
+            if (angleX < 0f)
+            {
+                angleX += 360f;
+            }
+
+            float result;
+            if (angleX <= 90f)
+            {
+                result = angleX / 90f;
+            }
+            else if (angleX <= 180f)
+            {
+                result = 1f - ((angleX - 90f) / 90f);
+            }
+            else if (angleX <= 270f)
+            {
+                result = - ((angleX - 180f) / 90f);
+            }
+            else
+            {
+                result = -1f + ((angleX - 270f) / 90f);
+            }
+
+            return -result / 2f + 0.5f;
+        }
         #endregion
 
         #region Get One Point...

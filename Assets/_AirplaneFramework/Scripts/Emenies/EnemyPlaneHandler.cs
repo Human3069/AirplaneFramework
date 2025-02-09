@@ -52,6 +52,12 @@ namespace AFramework
         [SerializeField]
         protected EnemyPlaneState planeState;
 
+        [Space(10)]
+        [SerializeField]
+        protected Transform indicatorT;
+        [SerializeField]
+        protected LineRenderer lineRenderer;
+
         protected override void Awake()
         {
             base.Awake();
@@ -73,6 +79,34 @@ namespace AFramework
             }
         }
 
+        protected void Update()
+        {
+            // indicator
+            PredictDataBundle predictBundle = PredictDataBundle.GetPredictData(ProjectileType._50cal_Friendly);
+            float distance = Vector3.Distance(targetRigidbody.worldCenterOfMass, this._rigidbody.worldCenterOfMass);
+            float? heightAmount = predictBundle.GetPredictedGravityHeightAmount(targetRigidbody.transform.eulerAngles.x, distance);
+
+            float? linearProjectileSpeed = predictBundle.GetLinearProjectileSpeed(distance);
+
+            if (linearProjectileSpeed != null)
+            {
+                lineRenderer.enabled = true;
+                Vector3 predictPos = Vector3Ex.GetPredictPosition(targetRigidbody.worldCenterOfMass, this._rigidbody.worldCenterOfMass, this._rigidbody.linearVelocity, linearProjectileSpeed.Value);
+                Vector3 resultPredictPos = predictPos + new Vector3(0f, heightAmount.Value, 0f);
+
+                if (heightAmount != null)
+                {
+                    indicatorT.position = resultPredictPos;
+                    lineRenderer.SetPosition(0, this.transform.position);
+                    lineRenderer.SetPosition(1, resultPredictPos);
+                }
+            }
+            else
+            {
+                lineRenderer.enabled = false;
+            }
+        }
+
         protected void FixedUpdate()
         {
             _rigidbody.AddForce(this.transform.forward * movePower);
@@ -80,7 +114,7 @@ namespace AFramework
             Vector3 _length = targetRigidbody.worldCenterOfMass - _rigidbody.worldCenterOfMass;
             Vector3 targetPredict = -_rigidbody.worldCenterOfMass + (targetRigidbody.worldCenterOfMass + (targetRigidbody.linearVelocity * _length.magnitude / 1050f));
 
-            Vector3 playerPredictPos = Vector3Ex.GetPredictPosition(_rigidbody.worldCenterOfMass, targetRigidbody.worldCenterOfMass, targetRigidbody.linearVelocity, _rigidbody.linearVelocity.magnitude);
+            // Vector3 playerPredictPos = Vector3Ex.GetPredictPosition(_rigidbody.worldCenterOfMass, targetRigidbody.worldCenterOfMass, targetRigidbody.linearVelocity, _rigidbody.linearVelocity.magnitude);
 
             if (IsDead == true)
             {
@@ -139,6 +173,8 @@ namespace AFramework
             onDamagedTrail.Stop();
             onDeadExplosion.Play();
             onDeadTrail.Play();
+
+            indicatorT.gameObject.SetActive(false);
         }
 
         protected void OnCollisionEnter(Collision collision)

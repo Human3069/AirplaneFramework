@@ -1,3 +1,4 @@
+using _KMH_Framework;
 using System;
 using UnityEngine;
 
@@ -14,6 +15,11 @@ namespace FPS_Framework.Pool
         public static GameObject EnablePool(this ImpactType type, Action<GameObject> beforeEnableAction = null)
         {
             GameObject pooledObj = ObjectPoolManager.Instance.GetPoolHandler(type).EnableObj(beforeEnableAction);
+            if (type == ImpactType._105mm_Explosion)
+            {
+                BlendableSoundManager.Instance.PlaySound(SoundType.Explosion, pooledObj.transform.position);
+            }
+
             return pooledObj;
         }
 
