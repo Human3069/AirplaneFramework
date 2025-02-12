@@ -1,5 +1,3 @@
-using _KMH_Framework;
-using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 namespace AFramework
@@ -7,15 +5,14 @@ namespace AFramework
     [RequireComponent(typeof(Rigidbody))]
     public class AirplaneHandler : MonoBehaviour
     {
-        protected float xRot;
-        protected float yRot;
-
         [SerializeField]
         protected AirplaneCamHandler camHandler;
         [SerializeField]
         protected AirplaneAxisInputHandler axisHandler;
         [SerializeField]
         protected AirplaneRigidHandler rigidHandler;
+        [SerializeField]
+        protected AirplaneAnimationController animationController;
         [SerializeField]
         protected AirplanePanelHandler panelHandler;
         [SerializeField]
@@ -44,6 +41,9 @@ namespace AFramework
         [SerializeField]
         protected float noclipMoveSpeed = 1f;
 
+        protected float xRot;
+        protected float yRot;
+
         protected void Awake()
         {
             Cursor.visible = false;
@@ -51,6 +51,7 @@ namespace AFramework
 
             camHandler.OnAwake(this);
             rigidHandler.OnAwake(this);
+            animationController.OnAwake();
             panelHandler.OnAwake(this);
             weaponHandler.OnAwake(this);
         }
@@ -62,7 +63,8 @@ namespace AFramework
             float weaponReboundAmount = weaponHandler.UpdateAndGetWeaponReboundAmount();
             camHandler.OnUpdate(weaponReboundAmount);
             rigidHandler.SetInput(rotationInput, throttleInput);
-      
+            animationController.SetInput(rotationInput, throttleInput);
+
             if (Input.GetKeyDown(KeyCode.V))
             {
                 isNoclipMode = !isNoclipMode;

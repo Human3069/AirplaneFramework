@@ -116,7 +116,10 @@ namespace AFramework
             compassT.localEulerAngles = new Vector3(0f, -_handler.transform.eulerAngles.y, 0f);
             gyroAnglerT.localEulerAngles = new Vector3(0, 90, -_handler.transform.eulerAngles.z);
             gyroBallT.localEulerAngles = new Vector3(0, 90, -_handler.transform.eulerAngles.z);
-            gyroBallT.localPosition = new Vector3(0.4288f, 0.354f - (hNormal * 0.1f), -0.2f); 
+            gyroBallT.localPosition = new Vector3(0.4288f, 0.354f - (hNormal * 0.1f), -0.2f);
+            
+            float normalizedAngle = Mathf.Lerp(45f, -45f, actualPower);
+            powerNeedleT.localEulerAngles = new Vector3(0f, 90f, normalizedAngle); 
 
             _propeller.OnFixedUpdate(mpsSpeed, actualPower);
         }

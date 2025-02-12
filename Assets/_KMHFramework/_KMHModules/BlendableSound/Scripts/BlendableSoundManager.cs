@@ -9,7 +9,7 @@ namespace _KMH_Framework
     public enum SoundType
     {
         Explosion,
-        GunFire,
+        EnemyAirplaneExplosion,
     }
 
     public class BlendableSoundManager : MonoSingleton<BlendableSoundManager>

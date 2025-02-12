@@ -64,7 +64,6 @@ namespace AFramework
             AwakeAsync().Forget();
         }
 
-
         protected async UniTaskVoid AwakeAsync()
         {
             await UniTask.WaitForSeconds(Random.Range(0f, 20f));
@@ -90,6 +89,11 @@ namespace AFramework
 
             if (linearProjectileSpeed != null)
             {
+                if (indicatorT.gameObject.activeSelf == false && IsDead == false)
+                {
+                    indicatorT.gameObject.SetActive(true);
+                }
+
                 lineRenderer.enabled = true;
                 Vector3 predictPos = Vector3Ex.GetPredictPosition(targetRigidbody.worldCenterOfMass, this._rigidbody.worldCenterOfMass, this._rigidbody.linearVelocity, linearProjectileSpeed.Value);
                 Vector3 resultPredictPos = predictPos + new Vector3(0f, heightAmount.Value, 0f);
@@ -103,6 +107,11 @@ namespace AFramework
             }
             else
             {
+                if (indicatorT.gameObject.activeSelf == true)
+                {
+                    indicatorT.gameObject.SetActive(false);
+                }
+
                 lineRenderer.enabled = false;
             }
         }
@@ -134,34 +143,6 @@ namespace AFramework
             }
         }
 
-        protected void OnDrawGizmos()
-        {
-            if (EditorApplication.isPlaying == true)
-            {
-                PredictDataBundle predictBundle = PredictDataBundle.GetPredictData(ProjectileType._50cal_Friendly);
-                float distance = Vector3.Distance(targetRigidbody.worldCenterOfMass, this._rigidbody.worldCenterOfMass);
-                float? heightAmount = predictBundle.GetPredictedGravityHeightAmount(targetRigidbody.transform.eulerAngles.x, distance);
-
-                float? linearProjectileSpeed = predictBundle.GetLinearProjectileSpeed(distance);
-
-                if (linearProjectileSpeed != null)
-                {
-                    Vector3 predictPos = Vector3Ex.GetPredictPosition(targetRigidbody.worldCenterOfMass, this._rigidbody.worldCenterOfMass, this._rigidbody.linearVelocity, linearProjectileSpeed.Value);
-                    Vector3 resultPredictPos = predictPos + new Vector3(0f, heightAmount.Value, 0f);
-
-                    if (heightAmount != null)
-                    {
-                        Gizmos.color = Color.red;
-                        Gizmos.DrawSphere(resultPredictPos, 1f);
-                        Gizmos.DrawLine(_rigidbody.worldCenterOfMass, resultPredictPos);
-                    }
-                }
-
-                Gizmos.color = Color.green;
-                Vector3 playerPredictPos = Vector3Ex.GetPredictPosition(_rigidbody.worldCenterOfMass, targetRigidbody.worldCenterOfMass, targetRigidbody.linearVelocity, _rigidbody.linearVelocity.magnitude);
-                Gizmos.DrawWireSphere(playerPredictPos, 10f);
-            }
-        }
 
         protected override void OnDamagedOneShot()
         {
@@ -175,6 +156,8 @@ namespace AFramework
             onDeadTrail.Play();
 
             indicatorT.gameObject.SetActive(false);
+
+            BlendableSoundManager.Instance.PlaySound(SoundType.EnemyAirplaneExplosion, this.transform.position);
         }
 
         protected void OnCollisionEnter(Collision collision)
