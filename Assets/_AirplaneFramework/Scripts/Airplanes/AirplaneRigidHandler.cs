@@ -257,16 +257,7 @@ namespace AFramework
 
         public void OnDrawGizmos()
         {
-            if (ObjectPoolManager.Instance != null)
-            {
-                GameObject bombObj = ProjectileType._50kg_Bomb_Friendly.PeekObj();
-                Rigidbody bombRigidbody = bombObj.GetComponent<Rigidbody>();
-                BulletHandler bombBullet = bombObj.GetComponent<BulletHandler>();
-
-                Vector3 predictPos = Predictor.PredictWithSingleCollision(bombRigidbody.linearDamping, _rigidbody.linearVelocity, bombBullet.LayerMask, out _, this._handler.transform.position, Physics.gravity, 0.9f, 200, true);
-                Gizmos.color = new Color(1f, 0f, 0f, 0.5f);
-                Gizmos.DrawSphere(predictPos, bombBullet.OverlapRadius);
-            }
+           
         }
 #endif
     }
