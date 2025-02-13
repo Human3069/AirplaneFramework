@@ -1,7 +1,6 @@
 using _KMH_Framework;
 using Cysharp.Threading.Tasks;
 using FPS_Framework.Pool;
-using UnityEditor;
 using UnityEngine;
 
 namespace AFramework
@@ -10,6 +9,12 @@ namespace AFramework
     {
         StraightAheading,
         Following,
+    }
+
+    public enum AttackState
+    {
+        NotFiring,
+        Firing,
     }
 
     [RequireComponent(typeof(Rigidbody))]
@@ -52,19 +57,83 @@ namespace AFramework
         [SerializeField]
         protected EnemyPlaneState planeState;
 
+        [SerializeField]
+        protected AttackState _attackState;
+        protected AttackState AttackState
+        {
+            get
+            {
+                return _attackState;
+            }
+            set
+            {
+                if (_attackState != value)
+                {
+                    _attackState = value;
+
+                    AttackAsync().Forget();
+                }
+            }
+        }
+
+        protected async UniTaskVoid AttackAsync()
+        {
+            while (AttackState == AttackState.Firing)
+            {
+                ProjectileType._50cal_Enemy.EnablePool<BulletHandler>(OnBeforeEnablePool);
+                void OnBeforeEnablePool(BulletHandler bullet)
+                {
+                    bullet.Initialize(this.transform, Vector3.zero, colliders);
+                }
+
+                await UniTask.WaitForSeconds(0.1f);
+            }
+        }
+
         [Space(10)]
         [SerializeField]
         protected Transform indicatorT;
         [SerializeField]
         protected LineRenderer lineRenderer;
 
+        protected bool _isIndicatorActive = false;
+        protected bool IsIndicatorActive
+        {
+            get
+            {
+                return _isIndicatorActive && IsDead == false;
+            }
+            set
+            {
+                if (_isIndicatorActive != value)
+                {
+                    _isIndicatorActive = value && IsDead == false;
+
+                    indicatorT.gameObject.SetActive(_isIndicatorActive);
+                    lineRenderer.enabled = IsIndicatorActive;
+                }
+            }
+        }
+
+        [Space(10)]
+        [ReadOnly]
+        [SerializeField]
+        protected float angleFromPlayer = 180f; // 
+        protected Vector3? resultPredictPos;
+
+        protected Collider[] colliders;
+
         protected override void Awake()
         {
             base.Awake();
-            AwakeAsync().Forget();
+
+            colliders = this.GetComponents<Collider>();
+
+            FlyingRoutine().Forget();
+            AttackingRoutine().Forget();
         }
 
-        protected async UniTaskVoid AwakeAsync()
+        protected async UniTaskVoid FlyingRoutine()
         {
             await UniTask.WaitForSeconds(Random.Range(0f, 20f));
 
@@ -78,6 +147,26 @@ namespace AFramework
             }
         }
 
+        protected async UniTaskVoid AttackingRoutine()
+        {
+            while (IsDead == false)
+            {
+                if (resultPredictPos != null)
+                {
+                    angleFromPlayer = Vector3Ex.GetAngleFromThreePositions(this.transform.position + this.transform.forward * 1000f, this.transform.position, resultPredictPos.Value);
+                    float distance = Vector3.Distance(targetRigidbody.worldCenterOfMass, this._rigidbody.worldCenterOfMass);
+
+                    AttackState = (angleFromPlayer < 5f && distance < 1000f) ? AttackState.Firing : AttackState.NotFiring;
+                }
+                else
+                {
+                    AttackState = AttackState.NotFiring;
+                }
+             
+                await UniTask.WaitForSeconds(0.1f);
+            }
+        }
+
         protected void Update()
         {
             // indicator
@@ -86,33 +175,19 @@ namespace AFramework
             float? heightAmount = predictBundle.GetPredictedGravityHeightAmount(targetRigidbody.transform.eulerAngles.x, distance);
 
             float? linearProjectileSpeed = predictBundle.GetLinearProjectileSpeed(distance);
+            IsIndicatorActive = linearProjectileSpeed != null;
 
             if (linearProjectileSpeed != null)
             {
-                if (indicatorT.gameObject.activeSelf == false && IsDead == false)
-                {
-                    indicatorT.gameObject.SetActive(true);
-                }
-
-                lineRenderer.enabled = true;
                 Vector3 predictPos = Vector3Ex.GetPredictPosition(targetRigidbody.worldCenterOfMass, this._rigidbody.worldCenterOfMass, this._rigidbody.linearVelocity, linearProjectileSpeed.Value);
-                Vector3 resultPredictPos = predictPos + new Vector3(0f, heightAmount.Value, 0f);
+                resultPredictPos = predictPos + new Vector3(0f, heightAmount.Value, 0f);
 
                 if (heightAmount != null)
                 {
-                    indicatorT.position = resultPredictPos;
+                    indicatorT.position = resultPredictPos.Value;
                     lineRenderer.SetPosition(0, this.transform.position);
-                    lineRenderer.SetPosition(1, resultPredictPos);
+                    lineRenderer.SetPosition(1, resultPredictPos.Value);
                 }
-            }
-            else
-            {
-                if (indicatorT.gameObject.activeSelf == true)
-                {
-                    indicatorT.gameObject.SetActive(false);
-                }
-
-                lineRenderer.enabled = false;
             }
         }
 

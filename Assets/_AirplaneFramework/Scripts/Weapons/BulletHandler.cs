@@ -116,6 +116,11 @@ namespace AFramework
         {
             await UniTask.Yield();
 
+            if (this.gameObject == null)
+            {
+                return;
+            }
+
             while (this.gameObject.activeInHierarchy == true)
             {
                 if (currentPos != Vector3.zero)

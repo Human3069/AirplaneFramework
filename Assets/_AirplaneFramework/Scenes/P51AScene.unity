@@ -386,6 +386,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
+      propertyPath: lookAtPower
+      value: 6000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: targetRigidbody
       value: 
       objectReference: {fileID: 255803132}
@@ -7103,7 +7107,7 @@ Rigidbody:
   m_GameObject: {fileID: 255803129}
   serializedVersion: 4
   m_Mass: 600
-  m_Drag: 1
+  m_Drag: 0.5
   m_AngularDrag: 2
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -7207,7 +7211,7 @@ MonoBehaviour:
     throttleInput: 0
   rigidHandler:
     IsEnabled: 1
-    _moveSpeed: 100000
+    _moveSpeed: 50000
     _rotateSpeed: 50
     inputNormal: 0
     inputNormalLerpValue: 0.001
@@ -17799,7 +17803,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: lookAtPower
-      value: 5000
+      value: 6000
       objectReference: {fileID: 0}
     - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: targetRigidbody
@@ -19586,7 +19590,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: lookAtPower
-      value: 5000
+      value: 6000
       objectReference: {fileID: 0}
     - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: targetRigidbody
@@ -28665,7 +28669,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: lookAtPower
-      value: 5000
+      value: 6000
       objectReference: {fileID: 0}
     - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: targetRigidbody
@@ -39292,23 +39296,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: lookAtPower
-      value: 5000
+      value: 6000
       objectReference: {fileID: 0}
     - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: targetRigidbody
       value: 
       objectReference: {fileID: 255803132}
-    - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
-      propertyPath: straightAheadingTime
-      value: 7.5
-      objectReference: {fileID: 0}
     - target: {fileID: 1559504887869703530, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: m_Name
       value: EnemyPlaneHandler_2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1559504887869703531, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1559504887869703531, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: m_LocalPosition.x
@@ -41605,7 +41601,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: lookAtPower
-      value: 5000
+      value: 6000
       objectReference: {fileID: 0}
     - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: targetRigidbody
@@ -56107,7 +56103,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: lookAtPower
-      value: 5000
+      value: 6000
       objectReference: {fileID: 0}
     - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: targetRigidbody
@@ -57715,7 +57711,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: lookAtPower
-      value: 5000
+      value: 6000
       objectReference: {fileID: 0}
     - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: targetRigidbody
@@ -60199,7 +60195,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: lookAtPower
-      value: 5000
+      value: 6000
       objectReference: {fileID: 0}
     - target: {fileID: 1559504887869703526, guid: 65241d4ecd6ae8e4b8d11039321b9427, type: 3}
       propertyPath: targetRigidbody
