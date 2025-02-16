@@ -61,6 +61,8 @@ namespace AFramework
 
         [SerializeField]
         protected float straightStabilitySenstivity;
+        [SerializeField]
+        protected float noiseAmount = 0.75f;
 
         [Space(10)]
         [SerializeField]
@@ -69,8 +71,28 @@ namespace AFramework
         [Space(10)]
         [SerializeField]
         protected float maxSpeed;
+
+        [Space(10)]
         [SerializeField]
-        protected float gravityRotationForce;
+        protected Vector3 localLinearDrag = new Vector3(0.75f, 10f, 0.75f);
+        [SerializeField]
+        protected float tiltSpeed = 100f;
+
+        [Space(10)]
+        [SerializeField]
+        protected Vector3 defaultLinearDrag = new Vector3(0.75f, 10f, 0.75f);
+        [SerializeField]
+        protected Vector3 flapLinearDrag = new Vector3(0.25f, 2f, 0.25f);
+        [SerializeField]
+        protected Vector3 landingGearLinearDrag = new Vector3(0.5f, 1f, 0.5f);
+
+        [Space(10)]
+        [SerializeField]
+        protected float defaultAngularDrag = 2f;
+        [SerializeField]
+        protected float flapAngularDrag = 0.5f;
+        [SerializeField]
+        protected float landingGearAngularDrag = 0.5f;
 
         [Space(10)]
         [SerializeField]
@@ -114,7 +136,9 @@ namespace AFramework
         protected Rigidbody _rigidbody;
 
         protected bool isEngineOn = false;
-   
+        protected bool isFlapOn = false;
+        protected bool isLandingGearOn = false;
+
 #if DEBUG
         [Space(10)]
         [SerializeField]
@@ -135,9 +159,14 @@ namespace AFramework
         public void OnAwake(AirplaneHandler handler)
         {
             this._handler = handler;
-            KeyType.Toggle_Boot.RegisterEventAsync(OnEngineValueChanged).Forget();
+            KeyType.Toggle_Boot.RegisterEventAsync(OnValueChangedBootToggle).Forget();
+            KeyType.Toggle_Flap.RegisterEventAsync(OnValueChangedFlapToggle).Forget();
+            KeyType.Toggle_Landing_Gear.RegisterEventAsync(OnValueChangedLandingGearToggle).Forget();
 
             _rigidbody = handler._Rigidbody;
+            _rigidbody.angularDamping = defaultAngularDrag + flapAngularDrag + landingGearAngularDrag;
+            localLinearDrag = defaultLinearDrag + flapLinearDrag + landingGearLinearDrag;
+
             _windBlowAudioSource.clip = windClip;
             _shakingAudioSource.clip = shakingClip;
 
@@ -148,9 +177,31 @@ namespace AFramework
                 _guiStyle.fontSize = 20;
             }
 #endif
+
+            OnAwakeAsync().Forget();
         }
 
-        protected void OnEngineValueChanged(bool isEngineOn)
+        protected async UniTaskVoid OnAwakeAsync()
+        {
+            await UniTask.WaitWhile(() => KeyCodeManager.Instance == null);
+
+            if (KeyType.Toggle_Boot.IsInputDown() == true)
+            {
+                KeyType.Toggle_Boot.SetToggleValue(false);
+            }
+
+            if (KeyType.Toggle_Flap.IsInputDown() == false)
+            {
+                KeyType.Toggle_Flap.SetToggleValue(true);
+            }
+
+            if (KeyType.Toggle_Landing_Gear.IsInputDown() == false)
+            {
+                KeyType.Toggle_Landing_Gear.SetToggleValue(true);
+            }
+        }
+
+        protected void OnValueChangedBootToggle(bool isEngineOn)
         {
             if (IsEnabled == false)
             {
@@ -158,7 +209,7 @@ namespace AFramework
             }
 
             this.isEngineOn = isEngineOn;
-
+        
             _engineAudioSource.loop = false;
             _engineAudioSource.Stop();
 
@@ -181,6 +232,38 @@ namespace AFramework
             }
         }
 
+        protected void OnValueChangedFlapToggle(bool isOn)
+        {
+            this.isFlapOn = isOn;
+
+            if (isOn == true)
+            {
+                _rigidbody.angularDamping += flapAngularDrag;
+                localLinearDrag += flapLinearDrag;
+            }
+            else
+            {
+                _rigidbody.angularDamping -= flapAngularDrag;
+                localLinearDrag -= flapLinearDrag;
+            }
+        }
+
+        protected void OnValueChangedLandingGearToggle(bool isOn)
+        {
+            this.isLandingGearOn = isOn;
+
+            if (isOn == true)
+            {
+                _rigidbody.angularDamping += landingGearAngularDrag;
+                localLinearDrag += landingGearLinearDrag;
+            }
+            else
+            {
+                _rigidbody.angularDamping -= landingGearAngularDrag;
+                localLinearDrag -= landingGearLinearDrag;
+            }
+        }
+
         protected IEnumerator PostOnBootValueChangedTrue()
         {
             if (IsEnabled == false)
@@ -196,6 +279,26 @@ namespace AFramework
             _engineAudioSource.loop = true;
             _engineAudioSource.clip = engineIdleClip;
             _engineAudioSource.Play();
+        }
+
+        public void OnUpdate()
+        {
+            // local drag
+            float timeFactor = Time.deltaTime * 200;
+
+            // get local linear drag force
+            Vector3 localLinearVelocity = _handler.transform.InverseTransformDirection(_rigidbody.linearVelocity);
+            Vector3 localLinearDragForce = new Vector3(-localLinearDrag.x * localLinearVelocity.x * Mathf.Abs(localLinearVelocity.x),
+                                                       -localLinearDrag.y * localLinearVelocity.y * Mathf.Abs(localLinearVelocity.y),
+                                                       -localLinearDrag.z * localLinearVelocity.z * Mathf.Abs(localLinearVelocity.z)) * timeFactor;
+
+            Vector3 worldDragForce = _handler.transform.TransformDirection(localLinearDragForce);
+            _rigidbody.AddForce(worldDragForce);
+
+            // tilt from center of mass
+            Vector3 diffWithCOM = _rigidbody.worldCenterOfMass - this._handler.transform.position;
+            Vector3 cross = Vector3.Cross(-diffWithCOM.normalized, Vector3.up) * diffWithCOM.sqrMagnitude * timeFactor;
+            _rigidbody.AddTorque(cross * tiltSpeed);
         }
 
         public (float, float) CalculateAndGetResult()
@@ -233,14 +336,32 @@ namespace AFramework
 
             _rigidbody.AddForce(_handler.transform.forward * actualPower * StraightStability * _moveSpeed);
             _rigidbody.AddTorque(_handler.transform.TransformDirection(_rotationInput * inputNormal * StraightStability * mps * _rotateSpeed));
-            _rigidbody.AddTorque(Vector3.Cross(-_handler.transform.forward, new Vector3(0, gravityRotationForce / (actualPower + 1), 0)));
 
             _engineAudioSource.pitch = actualPower + StraightStability;
             _shakingAudioSource.volume = StraightSpread * 2f;
             _windBlowAudioSource.volume = _rigidbody.linearVelocity.magnitude / maxSpeed;
 
             float headShakeAmount = StraightSpread * headShakePower;
+
             return (actualPower, headShakeAmount);
+        }
+
+        public void OnFixedUpdate()
+        {
+            float xNoise = (Mathf.PerlinNoise1D((Time.time + 0) * 0.3f) * 2) - 1;
+            float yNoise = (Mathf.PerlinNoise1D((Time.time + 100) * 0.3f) * 2) - 1;
+            float zNoise = (Mathf.PerlinNoise1D((Time.time + 200) * 0.3f) * 2) - 1;
+
+            Vector3 noise = new Vector3(xNoise, yNoise, zNoise) * StraightSpread * noiseAmount;
+
+            if (StraightSpread == 1f)
+            {
+                _rigidbody.AddTorque(noise * 10000f);
+            }
+            else
+            {
+                _rigidbody.AddTorque(noise * 0.75f * _rigidbody.linearVelocity.sqrMagnitude);
+            }
         }
 
 #if DEBUG

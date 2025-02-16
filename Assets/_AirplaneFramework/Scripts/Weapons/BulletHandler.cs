@@ -12,6 +12,14 @@ namespace AFramework
     {
         [SerializeField]
         protected ProjectileType projectileType;
+        public ProjectileType ProjectileType
+        {
+            get
+            {
+                return projectileType;
+            }
+        }
+
         [SerializeField]
         protected ImpactType impactType;
         [SerializeField]
@@ -109,6 +117,8 @@ namespace AFramework
             {
                 _trailRenderer.enabled = false;
                 this.gameObject.ReturnPool(projectileType);
+
+                OnHitAction = null;
             }
         }
 
@@ -163,11 +173,13 @@ namespace AFramework
                             }
 
                             OnHitAction?.Invoke(this, hit);
+                            OnHitAction = null;
                         }
                     }
                 }
                
                 currentPos = this.transform.position;
+                
                 await UniTask.Yield();
             }
         }

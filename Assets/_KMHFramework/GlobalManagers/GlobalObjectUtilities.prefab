@@ -2299,57 +2299,19 @@ MonoBehaviour:
       Value:
         poolCount: 30
         blendableSounds:
-        - range: {x: 0, y: 150}
+        - range: {x: 0, y: 500}
           curve:
             serializedVersion: 2
             m_Curve:
             - serializedVersion: 3
               time: 0
               value: 1
-              inSlope: 0
-              outSlope: 0
-              tangentMode: 0
-              weightedMode: 0
-              inWeight: 0.33333334
-              outWeight: 0.30092594
-            - serializedVersion: 3
-              time: 1
-              value: 0
-              inSlope: 0.004783417
-              outSlope: 0.004783417
-              tangentMode: 0
-              weightedMode: 0
-              inWeight: 0.49305558
-              outWeight: 0
-            m_PreInfinity: 2
-            m_PostInfinity: 2
-            m_RotationOrder: 4
-          clips:
-          - {fileID: 8300000, guid: 4fc7f035b4c84314ea83978f426c3376, type: 3}
-          - {fileID: 8300000, guid: 5c5c7fe84cfba894897a281c7d831312, type: 3}
-          - {fileID: 8300000, guid: f5e676d4589e1634da2407ab358d9283, type: 3}
-        - range: {x: 50, y: 1000}
-          curve:
-            serializedVersion: 2
-            m_Curve:
-            - serializedVersion: 3
-              time: 0
-              value: 0
               inSlope: 0.009988901
               outSlope: 0.009988901
               tangentMode: 0
               weightedMode: 0
               inWeight: 0
               outWeight: 0.4722222
-            - serializedVersion: 3
-              time: 0.5
-              value: 1
-              inSlope: -0.0080864765
-              outSlope: -0.0080864765
-              tangentMode: 0
-              weightedMode: 0
-              inWeight: 1
-              outWeight: 0.33333334
             - serializedVersion: 3
               time: 1
               value: 0
@@ -2363,10 +2325,74 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           clips:
-          - {fileID: 8300000, guid: bb5fd8ecfe237fe46848b2135c8845d6, type: 3}
-          - {fileID: 8300000, guid: 2fa5ffbc0d0e1634e92460cb4a6b8369, type: 3}
-          - {fileID: 8300000, guid: cfc3eeef8234a574bbab2e80280d33da, type: 3}
-        - range: {x: 1000, y: 2000}
+          - {fileID: 8300000, guid: 4fc7f035b4c84314ea83978f426c3376, type: 3}
+          - {fileID: 8300000, guid: 5c5c7fe84cfba894897a281c7d831312, type: 3}
+          - {fileID: 8300000, guid: f5e676d4589e1634da2407ab358d9283, type: 3}
+        - range: {x: 0, y: 2000}
+          curve:
+            serializedVersion: 2
+            m_Curve:
+            - serializedVersion: 3
+              time: 0
+              value: 5
+              inSlope: 0.009988901
+              outSlope: 0.009988901
+              tangentMode: 0
+              weightedMode: 0
+              inWeight: 0
+              outWeight: 0.4722222
+            - serializedVersion: 3
+              time: 1
+              value: 0
+              inSlope: 0
+              outSlope: 0
+              tangentMode: 0
+              weightedMode: 0
+              inWeight: 0.4953704
+              outWeight: 0
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+          clips:
+          - {fileID: 8300000, guid: 5a85f8c542d86094fa840d49ab75bae3, type: 3}
+    - Key: 2
+      Value:
+        poolCount: 30
+        blendableSounds:
+        - range: {x: 0, y: 20}
+          curve:
+            serializedVersion: 2
+            m_Curve:
+            - serializedVersion: 3
+              time: 0
+              value: 0.1
+              inSlope: -0.1
+              outSlope: -0.1
+              tangentMode: 34
+              weightedMode: 0
+              inWeight: 0
+              outWeight: 0.33333334
+            - serializedVersion: 3
+              time: 1
+              value: 0
+              inSlope: -0.1
+              outSlope: -0.1
+              tangentMode: 34
+              weightedMode: 0
+              inWeight: 0.33333334
+              outWeight: 0
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 0
+          clips:
+          - {fileID: 8300000, guid: bb34c6409d84bfe439c95671882493db, type: 3}
+          - {fileID: 8300000, guid: 72f7c23faad02734cb8b76f15741acdb, type: 3}
+          - {fileID: 8300000, guid: b04e9bd9e0b78844f8954d7d977011ee, type: 3}
+          - {fileID: 8300000, guid: 004875ab7ae6aa14e9c74be1531f2936, type: 3}
+          - {fileID: 8300000, guid: 3e01bf38cda069248bfcc8d4eda34263, type: 3}
+          - {fileID: 8300000, guid: f78c4ab10a2d94c4d9e9bb6812703abc, type: 3}
+          - {fileID: 8300000, guid: ef78a3970f83f324d904fec73d21c8b6, type: 3}
+        - range: {x: 10, y: 50}
           curve:
             serializedVersion: 2
             m_Curve:
@@ -2380,10 +2406,19 @@ MonoBehaviour:
               inWeight: 0
               outWeight: 0.4722222
             - serializedVersion: 3
+              time: 0.26751685
+              value: 0.5530422
+              inSlope: 2.9824615
+              outSlope: 2.9824615
+              tangentMode: 0
+              weightedMode: 0
+              inWeight: 0.33333334
+              outWeight: 0.33333334
+            - serializedVersion: 3
               time: 0.5
               value: 1
-              inSlope: 0
-              outSlope: 0
+              inSlope: -0.03873068
+              outSlope: -0.03873068
               tangentMode: 34
               weightedMode: 0
               inWeight: 0.33333334
@@ -2401,7 +2436,45 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           clips:
-          - {fileID: 8300000, guid: 5a85f8c542d86094fa840d49ab75bae3, type: 3}
+          - {fileID: 8300000, guid: 49a83c6c93defb94b902c32c8ae4b434, type: 3}
+          - {fileID: 8300000, guid: 1522c81ea14c04642a6c0d862c83fe54, type: 3}
+          - {fileID: 8300000, guid: 1faf4ab432bec7340a63a99c6f323c36, type: 3}
+          - {fileID: 8300000, guid: 7135946cdcc6ab44d8c2e1978d217058, type: 3}
+          - {fileID: 8300000, guid: 2dcb52c20e7890f418cb32b0f2b3ef02, type: 3}
+          - {fileID: 8300000, guid: 94c234eb11a81f74b8733475e696bf27, type: 3}
+          - {fileID: 8300000, guid: 87152f50229e558489f190ef67d424df, type: 3}
+          - {fileID: 8300000, guid: e56563a017973264dbe69fe0867a01fb, type: 3}
+    - Key: 3
+      Value:
+        poolCount: 30
+        blendableSounds:
+        - range: {x: 0, y: 1500}
+          curve:
+            serializedVersion: 2
+            m_Curve:
+            - serializedVersion: 3
+              time: 0
+              value: 1.5
+              inSlope: -2.0139306
+              outSlope: -2.0139306
+              tangentMode: 0
+              weightedMode: 0
+              inWeight: 0.33333334
+              outWeight: 0.49537036
+            - serializedVersion: 3
+              time: 1
+              value: 0
+              inSlope: 0
+              outSlope: 0
+              tangentMode: 0
+              weightedMode: 0
+              inWeight: 0.6041666
+              outWeight: 0
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+          clips:
+          - {fileID: 8300000, guid: 8f26243639a29d040a77a2e9079f3dca, type: 3}
 --- !u!1 &6928484837151891784
 GameObject:
   m_ObjectHideFlags: 0

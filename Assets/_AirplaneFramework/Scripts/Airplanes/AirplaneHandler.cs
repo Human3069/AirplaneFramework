@@ -1,3 +1,4 @@
+using _KMH_Framework;
 using UnityEngine;
 
 namespace AFramework
@@ -62,6 +63,7 @@ namespace AFramework
 
             float weaponReboundAmount = weaponHandler.UpdateAndGetWeaponReboundAmount();
             camHandler.OnUpdate(weaponReboundAmount);
+            rigidHandler.OnUpdate();
             rigidHandler.SetInput(rotationInput, throttleInput);
             animationController.SetInput(rotationInput, throttleInput);
 
@@ -73,7 +75,10 @@ namespace AFramework
                 axisHandler.IsEnabled = !isNoclipMode;
                 rigidHandler.IsEnabled = !isNoclipMode;
 
-                panelHandler._Propeller.NonSpinRenderer.enabled = !isNoclipMode;
+                if (panelHandler._Propeller.NonSpinRenderer != null)
+                {
+                    panelHandler._Propeller.NonSpinRenderer.enabled = !isNoclipMode;
+                }
             }
 
             if (isNoclipMode == true)
@@ -122,11 +127,23 @@ namespace AFramework
                     this.transform.Translate(Vector3.right * moveSpeed);
                 }
             }
+
+            Collider[] overlapColliders = Physics.OverlapSphere(this._Rigidbody.worldCenterOfMass, 20f);
+            foreach (Collider overlapCollider in overlapColliders)
+            {
+                if (overlapCollider.TryGetComponent(out BulletHandler bullet) == true &&
+                    bullet.ProjectileType == FPS_Framework.Pool.ProjectileType._50cal_Enemy)
+                {
+                    BlendableSoundManager.Instance.PlaySound(SoundType.BulletRicochet, bullet.transform.position);
+                    break;
+                }
+            }
         }
 
         protected void FixedUpdate()
         {
             (float actualPower, float headShakeAmount) = rigidHandler.CalculateAndGetResult();
+            rigidHandler.OnFixedUpdate();
 
             camHandler.SetHeadShakeAmount(headShakeAmount);
             panelHandler.OnFixedUpdate(actualPower);

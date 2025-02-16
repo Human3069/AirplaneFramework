@@ -35,9 +35,9 @@ public class PredictDataBundle : ScriptableObject
         }
     }
 
-    public float? GetLinearProjectileSpeed(float distance)
+    public float? GetLinearProjectileSpeed(float distance, float maxDistance)
     {
-        if (distance > 3000f || distance < 0f)
+        if (distance > maxDistance || distance < 0f)
         {
             return null;
         }
@@ -75,10 +75,10 @@ public class PredictDataBundle : ScriptableObject
     }
 
     // Predicts velocity and gravity
-    public Vector3? GetPredictedPosition(Vector3 firePos, float firingAngleX, Rigidbody targetRigidbody)
+    public Vector3? GetPredictedPosition(Vector3 firePos, float firingAngleX, Rigidbody targetRigidbody, float maxDistance)
     {
         float distance = (targetRigidbody.centerOfMass - firePos).magnitude;
-        float? lerpedSpeed = GetLinearProjectileSpeed(distance);
+        float? lerpedSpeed = GetLinearProjectileSpeed(distance, maxDistance);
         if (lerpedSpeed == null)
         {
             return null;

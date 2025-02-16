@@ -10,12 +10,12 @@ namespace AFramework
     public class AirplaneCamHandler
     {
         [SerializeField]
-        protected CinemachineVirtualCamera defaultCamera;
+        protected CinemachineCamera defaultCamera;
         protected CinemachineBasicMultiChannelPerlin defaultPerlin;
 
         [SerializeField]
-        protected CinemachineVirtualCamera povCamera;
-        protected CinemachinePOV pov;
+        protected CinemachineCamera povCamera;
+        protected CinemachinePanTilt pov;
         protected CinemachineBasicMultiChannelPerlin povPerlin;
 
         [Space(10)]
@@ -43,21 +43,21 @@ namespace AFramework
 
                 if (value == 1f)
                 {
-                    defaultCamera.m_Lens.FieldOfView -= 5f;
-                    povCamera.m_Lens.FieldOfView -= 5f;
+                    defaultCamera.Lens.FieldOfView -= 5f;
+                    povCamera.Lens.FieldOfView -= 5f;
                 }
                 else if (value == -1f)
                 {
-                    defaultCamera.m_Lens.FieldOfView += 5f;
-                    povCamera.m_Lens.FieldOfView += 5f;
+                    defaultCamera.Lens.FieldOfView += 5f;
+                    povCamera.Lens.FieldOfView += 5f;
                 }
                 else
                 {
                     //
                 }
 
-                defaultCamera.m_Lens.FieldOfView = Mathf.Clamp(defaultCamera.m_Lens.FieldOfView, 10f, 60f);
-                povCamera.m_Lens.FieldOfView = Mathf.Clamp(povCamera.m_Lens.FieldOfView, 10f, 60f);
+                defaultCamera.Lens.FieldOfView = Mathf.Clamp(defaultCamera.Lens.FieldOfView, 10f, 60f);
+                povCamera.Lens.FieldOfView = Mathf.Clamp(povCamera.Lens.FieldOfView, 10f, 60f);
             }
         }
 
@@ -72,14 +72,14 @@ namespace AFramework
         {
             this.handler = handler;
 
-            pov = povCamera.GetCinemachineComponent<CinemachinePOV>();
+            pov = povCamera.GetCinemachineComponent(CinemachineCore.Stage.Aim) as CinemachinePanTilt;
 
             Debug.Assert(defaultCamera != null);
             Debug.Assert(povCamera != null);
             Debug.Assert(pov != null);
 
-            defaultPerlin = defaultCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
-            povPerlin = povCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+            defaultPerlin = defaultCamera.GetCinemachineComponent(CinemachineCore.Stage.Noise) as CinemachineBasicMultiChannelPerlin;
+            povPerlin = povCamera.GetCinemachineComponent(CinemachineCore.Stage.Noise) as CinemachineBasicMultiChannelPerlin;
 
             Debug.Assert(defaultPerlin != null);
             Debug.Assert(povPerlin != null);
@@ -105,6 +105,9 @@ namespace AFramework
         {
             if (isOn == true)
             {
+                pov.PanAxis.Value = 0f;
+                pov.TiltAxis.Value = 0f;
+
                 povCamera.Priority = 1;
                 defaultCamera.Priority = 0;
             }

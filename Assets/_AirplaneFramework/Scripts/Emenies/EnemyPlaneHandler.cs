@@ -80,6 +80,7 @@ namespace AFramework
         {
             while (AttackState == AttackState.Firing)
             {
+                BlendableSoundManager.Instance.PlaySound(SoundType.EnemyGunFire, this.transform.position);
                 ProjectileType._50cal_Enemy.EnablePool<BulletHandler>(OnBeforeEnablePool);
                 void OnBeforeEnablePool(BulletHandler bullet)
                 {
@@ -119,7 +120,7 @@ namespace AFramework
         [ReadOnly]
         [SerializeField]
         protected float angleFromPlayer = 180f; // 
-        protected Vector3? resultPredictPos;
+        protected Vector3? playerPredictPos;
 
         protected Collider[] colliders;
 
@@ -151,9 +152,14 @@ namespace AFramework
         {
             while (IsDead == false)
             {
-                if (resultPredictPos != null)
+                if (this == null || this.gameObject == null)
                 {
-                    angleFromPlayer = Vector3Ex.GetAngleFromThreePositions(this.transform.position + this.transform.forward * 1000f, this.transform.position, resultPredictPos.Value);
+                    return;
+                }
+
+                if (playerPredictPos != null)
+                {
+                    angleFromPlayer = Vector3Ex.GetAngleFromThreePositions(this.transform.position + this.transform.forward * 1000f, this.transform.position, playerPredictPos.Value);
                     float distance = Vector3.Distance(targetRigidbody.worldCenterOfMass, this._rigidbody.worldCenterOfMass);
 
                     AttackState = (angleFromPlayer < 5f && distance < 1000f) ? AttackState.Firing : AttackState.NotFiring;
@@ -170,24 +176,36 @@ namespace AFramework
         protected void Update()
         {
             // indicator
-            PredictDataBundle predictBundle = PredictDataBundle.GetPredictData(ProjectileType._50cal_Friendly);
+            PredictDataBundle myPredictBundle = PredictDataBundle.GetPredictData(ProjectileType._50cal_Friendly);
             float distance = Vector3.Distance(targetRigidbody.worldCenterOfMass, this._rigidbody.worldCenterOfMass);
-            float? heightAmount = predictBundle.GetPredictedGravityHeightAmount(targetRigidbody.transform.eulerAngles.x, distance);
+            float? heightAmount = myPredictBundle.GetPredictedGravityHeightAmount(targetRigidbody.transform.eulerAngles.x, distance);
 
-            float? linearProjectileSpeed = predictBundle.GetLinearProjectileSpeed(distance);
-            IsIndicatorActive = linearProjectileSpeed != null;
+            float? myLinearProjectileSpeed = myPredictBundle.GetLinearProjectileSpeed(distance, 3000f);
+            IsIndicatorActive = myLinearProjectileSpeed != null;
 
-            if (linearProjectileSpeed != null)
+            if (myLinearProjectileSpeed != null)
             {
-                Vector3 predictPos = Vector3Ex.GetPredictPosition(targetRigidbody.worldCenterOfMass, this._rigidbody.worldCenterOfMass, this._rigidbody.linearVelocity, linearProjectileSpeed.Value);
-                resultPredictPos = predictPos + new Vector3(0f, heightAmount.Value, 0f);
+                Vector3 predictPos = Vector3Ex.GetPredictPosition(targetRigidbody.worldCenterOfMass, this.transform.position, this._rigidbody.linearVelocity, myLinearProjectileSpeed.Value);
+                Vector3 myPredictPos = predictPos + new Vector3(0f, heightAmount.Value, 0f);
 
                 if (heightAmount != null)
                 {
-                    indicatorT.position = resultPredictPos.Value;
+                    indicatorT.position = myPredictPos;
                     lineRenderer.SetPosition(0, this.transform.position);
-                    lineRenderer.SetPosition(1, resultPredictPos.Value);
+                    lineRenderer.SetPosition(1, myPredictPos);
                 }
+            }
+
+            PredictDataBundle playerPredictBundle = PredictDataBundle.GetPredictData(ProjectileType._50cal_Enemy);
+            float? playerLinearProjectileSpeed = playerPredictBundle.GetLinearProjectileSpeed(distance, 1800f);
+            if (playerLinearProjectileSpeed != null)
+            {
+                Vector3 predictPos = Vector3Ex.GetPredictPosition(this.transform.position, targetRigidbody.worldCenterOfMass, targetRigidbody.linearVelocity, playerLinearProjectileSpeed.Value);
+                playerPredictPos = predictPos + new Vector3(0f, heightAmount.Value, 0f);
+            }
+            else
+            {
+                playerPredictPos = null;
             }
         }
 
@@ -197,8 +215,6 @@ namespace AFramework
 
             Vector3 _length = targetRigidbody.worldCenterOfMass - _rigidbody.worldCenterOfMass;
             Vector3 targetPredict = -_rigidbody.worldCenterOfMass + (targetRigidbody.worldCenterOfMass + (targetRigidbody.linearVelocity * _length.magnitude / 1050f));
-
-            // Vector3 playerPredictPos = Vector3Ex.GetPredictPosition(_rigidbody.worldCenterOfMass, targetRigidbody.worldCenterOfMass, targetRigidbody.linearVelocity, _rigidbody.linearVelocity.magnitude);
 
             if (IsDead == true)
             {
@@ -240,6 +256,15 @@ namespace AFramework
             if (collision.collider.gameObject.isStatic == true)
             {
                 Destroy(this.gameObject);
+            }
+        }
+
+        protected void OnDrawGizmos()
+        {
+            if (playerPredictPos != null)
+            {
+                Gizmos.color = Color.red;
+                Gizmos.DrawSphere(playerPredictPos.Value, 1f);
             }
         }
     }

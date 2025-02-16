@@ -10,6 +10,8 @@ namespace _KMH_Framework
     {
         Explosion,
         EnemyAirplaneExplosion,
+        BulletRicochet,
+        EnemyGunFire
     }
 
     public class BlendableSoundManager : MonoSingleton<BlendableSoundManager>

@@ -38,8 +38,15 @@ namespace AFramework
                 float spinColorThreshold = Mathf.Clamp(mpsSpeed, 0f, maxBlurSpeed) / maxBlurSpeed;
                 float nonSpinColorThreshold = 1f - spinColorThreshold;
 
-                spinRenderer.material.color = new Color(1f, 1f, 1f, spinColorThreshold);
-                nonSpinRenderer.material.color = new Color(1f, 1f, 1f, nonSpinColorThreshold);
+                if (spinRenderer != null)
+                {
+                    spinRenderer.material.color = new Color(1f, 1f, 1f, spinColorThreshold);
+                }
+
+                if (nonSpinRenderer != null)
+                {
+                    nonSpinRenderer.material.color = new Color(1f, 1f, 1f, nonSpinColorThreshold);
+                }
 
                 if (KeyType.Toggle_Boot.ToggleValue() == true)
                 {
@@ -50,7 +57,10 @@ namespace AFramework
                     defaultRotSpeed = Mathf.Lerp(defaultRotSpeed, 0f, 0.01f);
                 }
 
-                this.transform.Rotate((speed * actualPower) + defaultRotSpeed, 0, 0, Space.Self);
+                if (transform != null)
+                {
+                    this.transform.Rotate((speed * actualPower) + defaultRotSpeed, 0, 0, Space.Self);
+                }
             }
         }
 
@@ -110,16 +120,42 @@ namespace AFramework
             mpsSpeed = _rigidbody.linearVelocity.magnitude;
             float hNormal = Vector3Ex.GetHorizontalNormalUnclamped(_rigidbody.transform.eulerAngles.x);
 
-            speedoNeedleT.localEulerAngles = new Vector3(0, 90, -kphSpeed / 2f);
-            altitudeShortNeedleT.localEulerAngles = new Vector3(0, 90, -altitude * 360f / 10000f);
-            altitudeLongNeedleT.localEulerAngles = new Vector3(0, 90, -altitude * 360f / 1000f);
-            compassT.localEulerAngles = new Vector3(0f, -_handler.transform.eulerAngles.y, 0f);
-            gyroAnglerT.localEulerAngles = new Vector3(0, 90, -_handler.transform.eulerAngles.z);
-            gyroBallT.localEulerAngles = new Vector3(0, 90, -_handler.transform.eulerAngles.z);
-            gyroBallT.localPosition = new Vector3(0.4288f, 0.354f - (hNormal * 0.1f), -0.2f);
+            if (speedoNeedleT != null)
+            {
+                speedoNeedleT.localEulerAngles = new Vector3(0, 90, -kphSpeed / 2f);
+            }
+
+            if (altitudeShortNeedleT != null)
+            {
+                altitudeShortNeedleT.localEulerAngles = new Vector3(0, 90, -altitude * 360f / 10000f);
+            }
+
+            if (altitudeLongNeedleT != null)
+            {
+                altitudeLongNeedleT.localEulerAngles = new Vector3(0, 90, -altitude * 360f / 1000f);
+            }
+            
+            if (compassT != null)
+            {
+                compassT.localEulerAngles = new Vector3(0f, -_handler.transform.eulerAngles.y, 0f);
+            }
+            
+            if (gyroAnglerT != null)
+            {
+                gyroAnglerT.localEulerAngles = new Vector3(0, 90, -_handler.transform.eulerAngles.z);
+            }
+            
+            if (gyroBallT != null)
+            {
+                gyroBallT.localEulerAngles = new Vector3(0, 90, -_handler.transform.eulerAngles.z);
+                gyroBallT.localPosition = new Vector3(0.4288f, 0.354f - (hNormal * 0.1f), -0.2f);
+            }
             
             float normalizedAngle = Mathf.Lerp(45f, -45f, actualPower);
-            powerNeedleT.localEulerAngles = new Vector3(0f, 90f, normalizedAngle); 
+            if (powerNeedleT != null)
+            {
+                powerNeedleT.localEulerAngles = new Vector3(0f, 90f, normalizedAngle);
+            }
 
             _propeller.OnFixedUpdate(mpsSpeed, actualPower);
         }

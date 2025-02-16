@@ -277,7 +277,7 @@ MonoBehaviour:
   _isDead: 0
   targetRigidbody: {fileID: 0}
   movePower: 80000
-  lookAtPower: 5000
+  lookAtPower: 7000
   rollStabilizationPower: 5000
   gravityRotationForce: 10000
   onDamagedTrail: {fileID: 1686112833865230941}
@@ -287,8 +287,10 @@ MonoBehaviour:
   straightAheadingTime: 7.5
   followingTime: 30
   planeState: 0
+  _attackState: 0
   indicatorT: {fileID: 5370190607222800744}
   lineRenderer: {fileID: 6528723990321203674}
+  angleFromPlayer: 180
 --- !u!54 &1559504887869703525
 Rigidbody:
   m_ObjectHideFlags: 0

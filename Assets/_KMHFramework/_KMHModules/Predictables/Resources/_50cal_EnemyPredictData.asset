@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8007af098fc3244292c0956d7842e68, type: 3}
+  m_Name: _50cal_EnemyPredictData
+  m_EditorClassIdentifier: 
+  dataList:
+  - Distance: 0
+    Time: 0
+    SpeedOnHit: 700
+    AdditionalHeight: 0
+  - Distance: 150
+    Time: 0.23199648
+    SpeedOnHit: 698.5929
+    AdditionalHeight: 2.084618
+  - Distance: 300
+    Time: 0.4288571
+    SpeedOnHit: 697.0378
+    AdditionalHeight: 3.3741524
+  - Distance: 450
+    Time: 0.64986503
+    SpeedOnHit: 695.5909
+    AdditionalHeight: 6.4161553
+  - Distance: 600
+    Time: 0.8700011
+    SpeedOnHit: 694.1145
+    AdditionalHeight: 10.296674
+  - Distance: 750
+    Time: 1.0548245
+    SpeedOnHit: 692.5767
+    AdditionalHeight: 16.474508
+  - Distance: 900
+    Time: 1.3189195
+    SpeedOnHit: 691.1516
+    AdditionalHeight: 5.493637
+  - Distance: 1050
+    Time: 1.5124651
+    SpeedOnHit: 689.5529
+    AdditionalHeight: 4.6644807
+  - Distance: 1200
+    Time: 1.730509
+    SpeedOnHit: 688.4713
+    AdditionalHeight: 31.223969
+  - Distance: 1350
+    Time: 1.9356151
+    SpeedOnHit: 686.9849
+    AdditionalHeight: 34.20963
+  - Distance: 1500
+    Time: 2.1493416
+    SpeedOnHit: 685.16187
+    AdditionalHeight: 17.401024
+  - Distance: 1650
+    Time: 2.377418
+    SpeedOnHit: 683.877
+    AdditionalHeight: 24.711298
+  - Distance: 1800
+    Time: 2.5878158
+    SpeedOnHit: 682.3313
+    AdditionalHeight: 24.643929
