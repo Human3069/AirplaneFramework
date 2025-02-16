@@ -20716,8 +20716,8 @@ Rigidbody:
   serializedVersion: 4
   m_Mass: 600
   m_Drag: 0
-  m_AngularDrag: 2
-  m_CenterOfMass: {x: 0, y: 0, z: 0.5}
+  m_AngularDrag: 4
+  m_CenterOfMass: {x: 0, y: 0, z: 0.25}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
@@ -20756,8 +20756,9 @@ MonoBehaviour:
     throttleInput: 0
   rigidHandler:
     IsEnabled: 1
-    _moveSpeed: 75000
-    _rotateSpeed: 50
+    _moveSpeed: 30000
+    _rotateSpeed: 200
+    hasLandingGear: 0
     inputNormal: 0
     inputNormalLerpValue: 0.001
     actualPower: 0
@@ -20765,17 +20766,17 @@ MonoBehaviour:
     actualPowerLerpOnAirValue: 0.0005
     _straightStability: 0
     straightStabilitySenstivity: 1
-    noiseAmount: 0.75
+    noiseAmount: 1.5
     headShakePower: 0.1
-    maxSpeed: 150
-    localLinearDrag: {x: 2.5, y: 10, z: 0.75}
-    tiltSpeed: 800
-    defaultLinearDrag: {x: 2.5, y: 10, z: 0.75}
-    flapLinearDrag: {x: 1.5, y: 4, z: 0.5}
-    landingGearLinearDrag: {x: 1.5, y: 1.5, z: 1}
-    defaultAngularDrag: 2
-    flapAngularDrag: 0.5
-    landingGearAngularDrag: 0.5
+    maxSpeed: 90
+    localLinearDrag: {x: 0.25, y: 5, z: 0.25}
+    tiltSpeed: 3000
+    defaultLinearDrag: {x: 0.5, y: 5, z: 0.25}
+    flapLinearDrag: {x: 0.25, y: 2.5, z: 0.25}
+    landingGearLinearDrag: {x: 0, y: 0, z: 0}
+    defaultAngularDrag: 4
+    flapAngularDrag: 0.25
+    landingGearAngularDrag: 0
     rightWheelCollider: {fileID: 86719564}
     leftWheelCollider: {fileID: 1844613491}
     _engineAudioSource: {fileID: 1108562365}
@@ -52967,7 +52968,7 @@ MonoBehaviour:
       Enabled: 1
       Input:
         InputAction: {fileID: -5630151704836100654, guid: 1d6e640e716dc4ff6989b73d02023f2b, type: 3}
-        Gain: 3
+        Gain: 1
         LegacyInput: Mouse X
         LegacyGain: 300
         CancelDeltaTime: 0
@@ -52980,7 +52981,7 @@ MonoBehaviour:
       Enabled: 1
       Input:
         InputAction: {fileID: -5630151704836100654, guid: 1d6e640e716dc4ff6989b73d02023f2b, type: 3}
-        Gain: 3
+        Gain: -1
         LegacyInput: Mouse Y
         LegacyGain: 300
         CancelDeltaTime: 0

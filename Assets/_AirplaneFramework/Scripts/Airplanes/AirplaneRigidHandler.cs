@@ -20,6 +20,10 @@ namespace AFramework
         protected float _rotateSpeed;
 
         [Header("Info")]
+        [SerializeField]
+        protected bool hasLandingGear;
+
+        [Space(10)]
         [ReadOnly]
         [SerializeField]
         protected float inputNormal = 0f;
@@ -161,12 +165,25 @@ namespace AFramework
             this._handler = handler;
             KeyType.Toggle_Boot.RegisterEventAsync(OnValueChangedBootToggle).Forget();
             KeyType.Toggle_Flap.RegisterEventAsync(OnValueChangedFlapToggle).Forget();
-            KeyType.Toggle_Landing_Gear.RegisterEventAsync(OnValueChangedLandingGearToggle).Forget();
 
+            if (hasLandingGear == true)
+            {
+                KeyType.Toggle_Landing_Gear.RegisterEventAsync(OnValueChangedLandingGearToggle).Forget();
+            }
+            
             _rigidbody = handler._Rigidbody;
-            _rigidbody.angularDamping = defaultAngularDrag + flapAngularDrag + landingGearAngularDrag;
-            localLinearDrag = defaultLinearDrag + flapLinearDrag + landingGearLinearDrag;
 
+            if (hasLandingGear == true)
+            {
+                _rigidbody.angularDamping = defaultAngularDrag + flapAngularDrag + landingGearAngularDrag;
+                localLinearDrag = defaultLinearDrag + flapLinearDrag + landingGearLinearDrag;
+            }
+            else
+            {
+                _rigidbody.angularDamping = defaultAngularDrag + flapAngularDrag;
+                localLinearDrag = defaultLinearDrag + flapLinearDrag;
+            }
+      
             _windBlowAudioSource.clip = windClip;
             _shakingAudioSource.clip = shakingClip;
 
